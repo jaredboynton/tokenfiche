@@ -2,7 +2,7 @@
   "variant": "t810549-p30-c10-fs10-m0-g0-ext562",
   "source_tokens": 810549,
   "source_sha256": "61ba8534647b9ed1eb49561925274038bac4c9d185448e63f73b2eff0140e9ae",
-  "base_source": "runs/codex-gpt55-image-maximize-2026-06-20/t562500-p21-c10-fs10-m0-g0/source-562500-tokens.txt",
+  "base_source": "experiments/codex-gpt55-image-maximize-2026-06-20/t562500-p21-c10-fs10-m0-g0/source-562500-tokens.txt",
   "extension_sources": [
     "White-Jacket.txt",
     "Typee.txt",
@@ -27,6 +27,8 @@
   },
   "line_count": 81600,
   "capacity": 81600,
+  "capacity_pass": true,
+  "markers_placed": true,
   "preflight_pass": true,
   "markers": [
     {

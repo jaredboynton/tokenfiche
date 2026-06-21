@@ -59,6 +59,9 @@ def main() -> int:
     check(best_summary["usage"]["input_tokens"] == 318283, "best run input tokens are recorded", failures)
     check(manifest["pixels"] == 270000000, "best run records 270M pixels", failures)
     check(manifest["estimated_total_patches"] == 265080, "best run records 265,080 patches", failures)
+    check(manifest["preflight_pass"] is True, "best run passed render preflight", failures)
+    check(manifest["capacity_pass"] is True, "best run capacity check passed", failures)
+    check(manifest["markers_placed"] is True, "best run marker placement check passed", failures)
     check(fail_summary["error"]["code"] == "context_length_exceeded", "31-image failure is recorded", failures)
 
     pages = sorted(BEST.glob("page-*.png"))

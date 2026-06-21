@@ -131,22 +131,15 @@ def main() -> int:
     args = parse_args()
     encoding = tiktoken.get_encoding(args.encoding)
 
-    if args.source_text:
-        text = exact_token_text(
-            encoding,
-            args.source_text.read_text(errors="replace"),
-            args.target_tokens,
-        )
-        source_files = [str(args.source_text)]
-    else:
-        text = source_from_inputs(
-            encoding,
-            args.input,
-            args.target_tokens,
-            args.repeat_corpus,
-            args.insert_needles,
-        )
-        source_files = [str(path) for path in args.input]
+    source_paths = [args.source_text] if args.source_text else args.input
+    text = source_from_inputs(
+        encoding,
+        source_paths,
+        args.target_tokens,
+        args.repeat_corpus if args.input else 1,
+        args.insert_needles,
+    )
+    source_files = [str(path) for path in source_paths]
 
     args.out.mkdir(parents=True, exist_ok=True)
     source_path = args.out / f"source-{args.target_tokens}-tokens.txt"
@@ -231,6 +224,10 @@ def main() -> int:
         )
         crop.save(args.out / f"needle-{marker['name']}-crop.png", optimize=True)
 
+    capacity_pass = len(lines) <= capacity
+    markers_placed = all(marker["name"] in marker_positions for marker in markers)
+    preflight_pass = capacity_pass and markers_placed
+
     manifest = {
         "variant": args.out.name,
         "source_tokens": args.target_tokens,
@@ -254,8 +251,9 @@ def main() -> int:
         },
         "line_count": len(lines),
         "capacity": capacity,
-        "preflight_pass": len(lines) <= capacity
-        and all(marker["name"] in marker_positions for marker in markers),
+        "capacity_pass": capacity_pass,
+        "markers_placed": markers_placed,
+        "preflight_pass": preflight_pass,
         "markers": markers,
         "marker_positions": marker_positions,
         "estimated_total_patches": args.pages
@@ -272,9 +270,8 @@ def main() -> int:
     }
     (args.out / "manifest.json").write_text(json.dumps(manifest, indent=2))
     print(json.dumps(manifest, indent=2))
-    return 0 if manifest["preflight_pass"] else 2
+    return 0 if preflight_pass else 2
 
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

@@ -1,140 +1,140 @@
 # tokenfiche
 
-Turn a very large text payload into readable page images, send those images to a multimodal model, and check whether the model can still pull exact facts back out.
+**A picture is worth a thousand words. We made each one worth about 27,000 tokens, and GPT-5.5 read them back.**
 
-This repo packages the experiment where GPT-5.5 through the Codex endpoint recovered three exact needle markers from **810,549 tokenizer-counted source tokens** rendered into **30 full-page images**. The same request shape failed at 31 images with `context_length_exceeded`, so the current proven limit for 3000x3000 `detail:"original"` pages is:
+What is a token, really? A model's text window stops at a hard number, 272,000 tokens for GPT-5.5 through the Codex endpoint. So we asked a simple question: if you render the text as images instead of sending it as text, does that number still apply? The vision path reads pixels, and pixels are cheap. How much text can you actually get a model to read by photographing it?
 
-- **30 images**
-- **270,000,000 total pixels**
-- **265,080 estimated 32x32 image patches**
-- **318,283 billed input tokens**
-- **810,549 source-text tokens recovered with all needles found**
+The answer, for this one proven run: **810,549 tokens of source text, packed into 30 page images, every fact recovered exactly.** That is 2.5 tokens of source text carried for every input token the API billed.
 
-The short version: images can carry much more source text than the text window would normally allow, but only if the text is rendered densely, legibly, and tested with retrieval probes. This is not magic compression. It is using the vision path as a lossy, OCR-like transport layer.
+## TL;DR
 
-## What This Enables
+We took 810,549 tokenizer-counted tokens of text (the source is Herman Melville, fittingly), hid three exact "needle" markers inside it, rendered the whole thing as 30 dense grayscale page images, and sent the images to GPT-5.5. The model found all three needles, character for character.
 
-This is useful when you need a model to look across more text than a text-only prompt can hold, and the task can tolerate visual/OCR-style risk.
+| Metric | Value |
+| --- | --- |
+| Source text rendered | **810,549 tokens** |
+| Page images | **30** (3000x3000 px) |
+| Source tokens per image | ~27,000 |
+| Billed input tokens | **318,283** |
+| Source-to-billed ratio | **2.55x** |
+| Needles recovered | **3 / 3 exact** |
+| One image more (31) | rejected: `context_length_exceeded` |
 
-Good fits:
+Evidence: `experiments/codex-gpt55-image-maximize-2026-06-20/api/t810549-p30-c10-fs10-m0-g0-ext562.summary.json`.
 
-- Long-document triage where exact phrasing matters less than finding anchored evidence.
-- Retrieval evals with inserted needles across huge payloads.
-- Agent memory or compaction experiments where you want to compare text transport versus image transport.
-- Shipping a giant static context snapshot to a model that can read page images.
-- Stress-testing multimodal context windows and billing behavior.
+This is the vision path used as a lossy, OCR-like transport layer. Images carry far more source text than the text window would normally hold, as long as the text is rendered densely, legibly, and verified with retrieval probes.
 
-Bad fits:
+## The two gates
 
-- Anything where one character wrong is dangerous.
-- Legal, medical, or financial workflows without a second verifier.
-- Code execution or patch generation from image text.
-- Private data experiments unless you are comfortable with the endpoint and retention behavior you are using.
+The interesting result is that "the endpoint accepted it" and "the model read it correctly" are two separate things, and they fail for different reasons.
 
-## Proven Result
+**Gate 1, the context gate, counts image patches.** The endpoint slices each 3000x3000 image into 32x32 patches: 94 x 94 = 8,836 patches per page. The context limit is enforced on that patch count, near 272,000, and the billed `input_tokens` figure (318,283) is a separate billing number that is allowed to exceed it. The boundary is clean:
 
-The best run is preserved here:
+| Pages | Patches | Result |
+| --- | --- | --- |
+| 30 | 265,080 | accepted |
+| 31 | 273,916 | `context_length_exceeded` |
 
-```text
-experiments/codex-gpt55-image-maximize-2026-06-20/
-```
+272,000 sits exactly between them. Thirty pages is the wall for this page size. Evidence: `...api/t836811-p31-...summary.json`.
 
-Key files:
+**Gate 2, the retrieval gate, is OCR.** Passing the context gate only means the bytes fit. The model still has to read pixels. We pushed denser 30-image layouts to 892k and 909k source tokens, and they were accepted and completed, but the model misread the beta needle:
 
 ```text
-experiments/codex-gpt55-image-maximize-2026-06-20/t810549-p30-c10-fs10-m0-g0-ext562/
-experiments/codex-gpt55-image-maximize-2026-06-20/api/t810549-p30-c10-fs10-m0-g0-ext562.summary.json
-experiments/codex-gpt55-image-maximize-2026-06-20/api/t836811-p31-c10-fs10-m0-g0-ext562.summary.json
-docs/experiment-log.md
+expected: NEEDLE_BETA::QUEEQUEG-LANTERN-1836
+got:      NEEDLE_BETA::QUEQUEG-LANTERN-1836
 ```
 
-The 810,549-token run succeeded. The 836,811-token / 31-image run failed with `context_length_exceeded`. Dense 30-image variants that tried to pack around 890k to 910k source tokens completed, but misread the beta needle, so they do not count as successful exact retrieval.
+One dropped `E`. That run does not count. A configuration is only a success if it passes the retrieval task you actually care about. Evidence: `docs/experiment-log.md` "Failed Retrieval Attempts."
 
-## Quick Start
+## How it works
 
-Use `uv` so you do not have to install anything globally:
+Four scripts, run in order:
+
+```text
+render_token_images.py   text -> dense page PNGs + manifest
+build_codex_request.py   PNGs -> base64 Codex request with a strict-JSON output schema
+send_codex_request.py    request -> SSE stream -> classified summary
+verify_repo.py           sanity-check the packaged evidence
+```
+
+The renderer trims text to an exact token budget with tiktoken, inserts the three needle markers at 20% / 50% / 90% offsets, reflows paragraphs, and packs them into multi-column pages. It computes layout capacity and fails preflight if the text would overflow, so you never pay for an image that dropped characters off the page.
+
+The winning layout is intentionally plain:
+
+- 3000x3000 grayscale PNG pages
+- 10 columns, 0 px margins, 0 px gutters
+- Courier New at 10 px, 49 characters per line, 11 px line height
+- 30 pages, 81,600 wrapped lines, 99.8% average rendered ink width
+
+The zero-margin part is the whole trick. Early attempts preserved Project Gutenberg's hard wraps, which left text in a narrow strip down the left side and wasted most of the page. Reflowing first is what turned 375k tokens of wasted whitespace into 810k tokens of dense, readable text.
+
+## Reproduce it
+
+You need `uv`. Nothing else installs globally.
+
+Verify the packaged evidence:
 
 ```bash
 uv run --with pillow --with tiktoken python scripts/verify_repo.py
 ```
 
-Render the preserved best source again:
+Re-render the proven best source:
 
 ```bash
 uv run --with pillow --with tiktoken python scripts/render_token_images.py \
   --source-text experiments/codex-gpt55-image-maximize-2026-06-20/t810549-p30-c10-fs10-m0-g0-ext562/source-810549-tokens.txt \
   --target-tokens 810549 \
-  --pages 30 \
-  --columns 10 \
-  --font-size 10 \
-  --chars-per-line 49 \
-  --line-height 11 \
+  --pages 30 --columns 10 --font-size 10 \
+  --chars-per-line 49 --line-height 11 \
   --out runs/repro-810549
 ```
 
-Build a Codex request body from those images:
+Build the request, then send it with your Codex auth:
 
 ```bash
 python scripts/build_codex_request.py \
   --render-dir runs/repro-810549 \
   --output runs/repro-810549.request.json \
   --redacted-output runs/repro-810549.request.redacted.json
-```
 
-Send it with your local Codex auth:
-
-```bash
 python scripts/send_codex_request.py \
   --request runs/repro-810549.request.json \
   --manifest runs/repro-810549/manifest.json \
   --out-dir runs/repro-810549-api
 ```
 
-`send_codex_request.py` reads `~/.codex/auth.json` by default, or you can provide `CODEX_ACCESS_TOKEN` and `CHATGPT_ACCOUNT_ID`.
+`send_codex_request.py` reads `~/.codex/auth.json` by default, or accepts `CODEX_ACCESS_TOKEN` and `CHATGPT_ACCOUNT_ID`.
 
-## Layout Notes
+## When this is worth it
 
-The winning layout is intentionally plain:
+Good fits:
 
-- 3000x3000 grayscale PNG pages.
-- 10 columns per page.
-- 0 px margins and 0 px gutters.
-- Courier New at 10 px.
-- 49 characters per line.
-- 11 px line height.
-- 30 pages.
+- Long-document triage where finding anchored evidence matters more than perfect transcription.
+- Retrieval evals with inserted needles across huge payloads.
+- Agent-memory or compaction experiments comparing text transport against image transport.
+- Stress-testing multimodal context windows and billing behavior.
 
-The no-margin part matters. Earlier attempts wasted space by preserving Gutenberg hard wraps, which made text appear as a narrow strip on the left side of the image. The renderer in this repo reflows paragraphs before wrapping, measures the rendered ink box, and writes marker crops so you can inspect whether the result is actually legible before paying for an API call.
+Bad fits:
 
-## A Note On Reliability
+- Anything where one wrong character is dangerous.
+- Legal, medical, or financial work without a second verifier.
+- Code execution or patch generation from image text.
+- Private data, unless you are comfortable with the endpoint and its retention behavior.
 
-The model can read a lot from these pages, but it is still reading pixels. We saw two dense 30-image variants complete while misreading:
-
-```text
-NEEDLE_BETA::QUEEQUEG-LANTERN-1836
-```
-
-as:
+## Repo map
 
 ```text
-NEEDLE_BETA::QUEQUEG-LANTERN-1836
-```
-
-That is why the scripts and docs treat "accepted by the endpoint" and "usable by the model" as different outcomes. Always test with needles, always inspect crops, and only trust configurations that pass the retrieval task you actually care about.
-
-## Repo Map
-
-```text
-scripts/render_token_images.py       render source text into page PNGs
-scripts/build_codex_request.py       build a Responses-style Codex request body
-scripts/send_codex_request.py        send the request and summarize the SSE result
-scripts/verify_repo.py               check the packaged evidence and scripts
-docs/experiment-log.md               best result first, then superseded and failed runs
-docs/blob-context-probe.md           notes from earlier blob/base64/image probes
-experiments/                         preserved experiment summaries and best images
-examples/gutenberg-cache/            public-domain source texts used in the run
+scripts/render_token_images.py   render source text into page PNGs
+scripts/build_codex_request.py   build a Responses-style Codex request body
+scripts/send_codex_request.py    send the request and summarize the SSE result
+scripts/verify_repo.py           check the packaged evidence and scripts
+docs/experiment-log.md           best result first, then superseded and failed runs
+docs/request-shape.md            observed Codex request shape and limits
+docs/blob-context-probe.md       earlier blob / base64 / image probes
+experiments/                     preserved summaries and the best run's images
+examples/gutenberg-cache/        public-domain source texts
 ```
 
 ## Status
 
-This is an experiment package, not an official SDK. The Codex endpoint, headers, model behavior, and limits can change. Treat the included numbers as grounded evidence for the recorded run, not a contract.
+This is an experiment package, not an official SDK. The Codex endpoint, headers, model behavior, and limits can change. Treat the numbers here as grounded evidence for the recorded run, not a contract. Always test with needles, always inspect the marker crops, and only trust a layout that passes the retrieval task you actually care about.

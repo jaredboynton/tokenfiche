@@ -1,5 +1,5 @@
 [project]
-name = "token-image-compaction"
+name = "tokenfiche"
 version = "0.1.0"
 description = "Render large text payloads into dense page images and probe multimodal context limits."
 readme = "README.md"

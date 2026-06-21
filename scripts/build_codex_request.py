@@ -88,7 +88,7 @@ def main() -> int:
             "format": {
                 "type": "json_schema",
                 "strict": True,
-                "name": "token_image_compaction_probe",
+                "name": "tokenfiche_probe",
                 "schema": SCHEMA,
             }
         },
@@ -100,7 +100,7 @@ def main() -> int:
         "parallel_tool_calls": False,
         "store": False,
         "service_tier": args.service_tier,
-        "prompt_cache_key": f"token-image-compaction-{args.render_dir.name}-{uuid.uuid4()}",
+        "prompt_cache_key": f"tokenfiche-{args.render_dir.name}-{uuid.uuid4()}",
     }
 
     args.output.parent.mkdir(parents=True, exist_ok=True)

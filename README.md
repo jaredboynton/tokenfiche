@@ -1,4 +1,4 @@
-# token-image-compaction
+# tokenfiche
 
 Turn a very large text payload into readable page images, send those images to a multimodal model, and check whether the model can still pull exact facts back out.
 

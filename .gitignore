@@ -8,3 +8,4 @@ runs/
 *.headers.txt
 *.sse
 *.curl.redacted.sh
+.unifable/

@@ -1,0 +1,82 @@
+{
+  "blend_image_count": 5,
+  "source_page_count": 30,
+  "groups": [
+    {
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-blend-sweep-2026-06-20/blend-05/blend-05-01.png",
+      "image": 1,
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "bytes": 6318800,
+      "width": 5448,
+      "height": 88624
+    },
+    {
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-blend-sweep-2026-06-20/blend-05/blend-05-02.png",
+      "image": 2,
+      "pages": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "bytes": 6370919,
+      "width": 5448,
+      "height": 84928
+    },
+    {
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-blend-sweep-2026-06-20/blend-05/blend-05-03.png",
+      "image": 3,
+      "pages": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "bytes": 6419453,
+      "width": 5448,
+      "height": 86496
+    },
+    {
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-blend-sweep-2026-06-20/blend-05/blend-05-04.png",
+      "image": 4,
+      "pages": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "bytes": 6213212,
+      "width": 5448,
+      "height": 85776
+    },
+    {
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-blend-sweep-2026-06-20/blend-05/blend-05-05.png",
+      "image": 5,
+      "pages": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "bytes": 6653552,
+      "width": 5448,
+      "height": 88464
+    }
+  ],
+  "total_image_bytes": 31975936
+}

@@ -1,0 +1,80 @@
+{
+  "blend_image_count": 10,
+  "source_page_count": 30,
+  "pages_per_image": [
+    [
+      1,
+      2,
+      3
+    ],
+    [
+      4,
+      5,
+      6
+    ],
+    [
+      7,
+      8,
+      9
+    ],
+    [
+      10,
+      11,
+      12
+    ],
+    [
+      13,
+      14,
+      15
+    ],
+    [
+      16,
+      17,
+      18
+    ],
+    [
+      19,
+      20,
+      21
+    ],
+    [
+      22,
+      23,
+      24
+    ],
+    [
+      25,
+      26,
+      27
+    ],
+    [
+      28,
+      29,
+      30
+    ]
+  ],
+  "http_status_line": "HTTP/2 200 ",
+  "curl_returncode": 0,
+  "curl_stderr": "",
+  "elapsed_seconds": 20.262,
+  "request_bytes": 42637155,
+  "total_image_bytes": 31976198,
+  "max_image_height": 45584,
+  "event_count": 63,
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 54433,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 74,
+    "output_tokens_details": {
+      "reasoning_tokens": 74
+    },
+    "total_tokens": 54507
+  },
+  "error": null,
+  "classification": "completed_missing_needles",
+  "found_marker_strings": [],
+  "output_text": "{\"ok\":false,\"found_markers\":[],\"missing_markers\":[],\"notes\":\"The provided images are too low-resolution/small for the embedded prose or any needle marker strings to be read reliably. No exact marker strings are visible, so none are extracted.\"}"
+}

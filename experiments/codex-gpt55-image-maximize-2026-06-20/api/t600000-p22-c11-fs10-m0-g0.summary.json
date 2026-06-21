@@ -1,0 +1,59 @@
+{
+  "name": "t600000-p22-c11-fs10-m0-g0",
+  "layout_manifest": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t600000-p22-c11-fs10-m0-g0/manifest.json",
+  "source_tokens": 600000,
+  "page_count": 22,
+  "columns": 11,
+  "font_size": 10,
+  "margin": 0,
+  "gutter": 0,
+  "ink_width_pct_avg_rendered": 98.85,
+  "estimated_total_patches": 194392,
+  "http_status_line": "HTTP/2 200 ",
+  "curl_returncode": 0,
+  "curl_stderr": "",
+  "elapsed_seconds": 35.884,
+  "request_bytes": 19354202,
+  "event_count": 244,
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 233451,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 555,
+    "output_tokens_details": {
+      "reasoning_tokens": 307
+    },
+    "total_tokens": 234006
+  },
+  "error": null,
+  "classification": "completed_missing_needles",
+  "expected_markers": [
+    "NEEDLE_ALPHA::AHAB-SEES-7429",
+    "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+    "NEEDLE_GAMMA::MELVILLE-SURF-9021"
+  ],
+  "found_marker_strings": [
+    "NEEDLE_ALPHA::AHAB-SEES-7429",
+    "NEEDLE_BETA::QUEEQUEG-LANTERN-1836"
+  ],
+  "output_text": "{\"ok\":true,\"found_markers\":[{\"marker\":\"NEEDLE_ALPHA::AHAB-SEES-7429\",\"surrounding_context\":\"...the Surmounters, and musketry swivels; and knowing by her still halting course and winding, woefully yawing ship, the ivory Pequod bore down upon her. NEEDLE_ALPHA::AHAB-SEES-7429 suppose that the fish seen by Tashtego had been in any way alarmed...\"},{\"marker\":\"NEEDLE_BETA::QUEEQUEG-LANTERN-1836\",\"surrounding_context\":\"...There she blows!--there she blows!\u2014right ahead!\\\" was now the mast-head cry. \\\"Aye, aye!\\\" cried Stubb, \\\"I knew it\u2014ye can't escape... NEEDLE_BETA::QUEEQUEG-LANTERN-1836 he should still go before me...\"}],\"missing_markers\":[\"one embedded marker not visible/identified\"],\"notes\":\"I visually identified two exact needle marker strings in the rendered text. I did not invent the third marker string because it was not visible/confirmed.\"}",
+  "parsed_output": {
+    "ok": true,
+    "found_markers": [
+      {
+        "marker": "NEEDLE_ALPHA::AHAB-SEES-7429",
+        "surrounding_context": "...the Surmounters, and musketry swivels; and knowing by her still halting course and winding, woefully yawing ship, the ivory Pequod bore down upon her. NEEDLE_ALPHA::AHAB-SEES-7429 suppose that the fish seen by Tashtego had been in any way alarmed..."
+      },
+      {
+        "marker": "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+        "surrounding_context": "...There she blows!--there she blows!\u2014right ahead!\" was now the mast-head cry. \"Aye, aye!\" cried Stubb, \"I knew it\u2014ye can't escape... NEEDLE_BETA::QUEEQUEG-LANTERN-1836 he should still go before me..."
+      }
+    ],
+    "missing_markers": [
+      "one embedded marker not visible/identified"
+    ],
+    "notes": "I visually identified two exact needle marker strings in the rendered text. I did not invent the third marker string because it was not visible/confirmed."
+  }
+}

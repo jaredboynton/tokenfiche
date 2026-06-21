@@ -1,0 +1,43 @@
+{
+  "name": "t1019682-p38-c10-fs10-m0-g0-ext562",
+  "layout_manifest": "runs/codex-gpt55-image-maximize-2026-06-20/t1019682-p38-c10-fs10-m0-g0-ext562/manifest.json",
+  "source_tokens": 1019682,
+  "page_count": 38,
+  "columns": 10,
+  "font_size": 10,
+  "margin": 0,
+  "gutter": 0,
+  "line_height": 11,
+  "chars_per_line": 49,
+  "line_count": 103360,
+  "capacity": 103360,
+  "ink_width_pct_avg_rendered": 99.8,
+  "ink_width_pct_min_rendered": 99.8,
+  "estimated_total_patches": 335768,
+  "pixels": 342000000,
+  "http_status_line": "HTTP/2 200 ",
+  "curl_returncode": 0,
+  "elapsed_seconds": 13.805,
+  "request_bytes": 34521178,
+  "event_count": 4,
+  "response_status": "failed",
+  "usage": null,
+  "error": {
+    "code": "context_length_exceeded",
+    "message": "Your input exceeds the context window of this model. Please adjust your input and try again."
+  },
+  "classification": "errored",
+  "expected_markers": [
+    "NEEDLE_ALPHA::AHAB-SEES-7429",
+    "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+    "NEEDLE_GAMMA::MELVILLE-SURF-9021"
+  ],
+  "found_marker_strings": [],
+  "missing_marker_strings": [
+    "NEEDLE_ALPHA::AHAB-SEES-7429",
+    "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+    "NEEDLE_GAMMA::MELVILLE-SURF-9021"
+  ],
+  "output_text": "",
+  "parsed_output": null
+}

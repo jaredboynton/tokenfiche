@@ -1,0 +1,27 @@
+{
+  "name": "valid-input-image-marker",
+  "marker": "VALID_IMAGE_MARKER_828EBEA2DB",
+  "pngPath": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-blob-context-probe-2026-06-20/valid-input-image-marker.png",
+  "identify": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-blob-context-probe-2026-06-20/valid-input-image-marker.png PNG 1800x420 1800x420+0+0 8-bit Grayscale Gray 256c 10207B 0.000u 0:00.000",
+  "http_status": "200",
+  "curl_status": 0,
+  "curl_stderr": "",
+  "elapsed_ms": 2050,
+  "request_bytes": 14812,
+  "event_count": 33,
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 1044,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 37,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1081
+  },
+  "error": null,
+  "output": "{\"ok\":true,\"seen_kind\":\"image_text\",\"payload_marker\":\"VALID_IMAGE_MARKER_828EBEA2DB\"}",
+  "marker_matched": true
+}

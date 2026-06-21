@@ -1,0 +1,44 @@
+[
+  {
+    "name": "target-375k-text-125000w",
+    "mode": "text",
+    "words": 125000,
+    "marker": "TARGET_375K_5fb27a5424",
+    "payload_chars": 1500075,
+    "approx_expected_input_tokens_from_calibration": 375154,
+    "http_status": "200",
+    "curl_status": 0,
+    "curl_stderr": "",
+    "elapsed_ms": 1367,
+    "request_bytes": 1501179,
+    "event_count": 4,
+    "response_status": "failed",
+    "usage": null,
+    "error": {
+      "code": "context_length_exceeded",
+      "message": "Your input exceeds the context window of this model. Please adjust your input and try again."
+    },
+    "output": ""
+  },
+  {
+    "name": "target-375k-file-125000w",
+    "mode": "input_file",
+    "words": 125000,
+    "marker": "TARGET_375K_5fb27a5424",
+    "payload_chars": 1500075,
+    "approx_expected_input_tokens_from_calibration": 375154,
+    "http_status": "200",
+    "curl_status": 0,
+    "curl_stderr": "",
+    "elapsed_ms": 1604,
+    "request_bytes": 2001308,
+    "event_count": 4,
+    "response_status": "failed",
+    "usage": null,
+    "error": {
+      "code": "context_length_exceeded",
+      "message": "Your input exceeds the context window of this model. Please adjust your input and try again."
+    },
+    "output": ""
+  }
+]

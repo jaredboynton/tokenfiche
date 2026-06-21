@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+runs/
+*.request.json
+*.request.redacted.json
+*.headers.txt
+*.sse
+*.curl.redacted.sh

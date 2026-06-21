@@ -1,0 +1,100 @@
+{
+  "blend_image_count": 20,
+  "source_page_count": 30,
+  "pages_per_image": [
+    [
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      4
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      7
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      10
+    ],
+    [
+      11,
+      12
+    ],
+    [
+      13
+    ],
+    [
+      14,
+      15
+    ],
+    [
+      16
+    ],
+    [
+      17,
+      18
+    ],
+    [
+      19
+    ],
+    [
+      20,
+      21
+    ],
+    [
+      22
+    ],
+    [
+      23,
+      24
+    ],
+    [
+      25
+    ],
+    [
+      26,
+      27
+    ],
+    [
+      28
+    ],
+    [
+      29,
+      30
+    ]
+  ],
+  "http_status_line": "HTTP/2 200 ",
+  "curl_returncode": 0,
+  "curl_stderr": "",
+  "elapsed_seconds": 44.247,
+  "request_bytes": 42639483,
+  "total_image_bytes": 31977270,
+  "max_image_height": 29504,
+  "event_count": 63,
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 199971,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 400,
+    "output_tokens_details": {
+      "reasoning_tokens": 332
+    },
+    "total_tokens": 200371
+  },
+  "error": null,
+  "classification": "completed_missing_needles",
+  "found_marker_strings": [],
+  "output_text": "{\"ok\":false,\"found_markers\":[],\"missing_markers\":[],\"notes\":\"The provided montage text is too small/low-resolution for me to reliably read and extract exact needle marker strings. I am not inventing marker strings that are not clearly visible.\"}"
+}

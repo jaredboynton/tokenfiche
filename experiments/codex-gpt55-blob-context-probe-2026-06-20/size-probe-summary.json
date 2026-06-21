@@ -1,0 +1,100 @@
+[
+  {
+    "name": "text-20000w",
+    "words": 20000,
+    "marker": "SIZE_MARKER_20000_706d291b",
+    "payload_chars": 240099,
+    "mode": "text",
+    "http_status": "200",
+    "curl_status": 0,
+    "curl_error": null,
+    "curl_stderr": "",
+    "elapsed_ms": 2186,
+    "request_bytes": 241205,
+    "eventCount": 35,
+    "responseStatus": "completed",
+    "usage": {
+      "input_tokens": 60112,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 36,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 60148
+    },
+    "error": null,
+    "output": "{\"ok\":true,\"seen_kind\":\"FINAL_MARKER\",\"payload_marker\":\"SIZE_MARKER_20000_706d291b\"}"
+  },
+  {
+    "name": "file-20000w",
+    "words": 20000,
+    "marker": "SIZE_MARKER_20000_706d291b",
+    "payload_chars": 240099,
+    "mode": "input_file",
+    "http_status": "200",
+    "curl_status": 0,
+    "curl_error": null,
+    "curl_stderr": "",
+    "elapsed_ms": 2578,
+    "request_bytes": 321341,
+    "eventCount": 33,
+    "responseStatus": "completed",
+    "usage": {
+      "input_tokens": 60120,
+      "input_tokens_details": {
+        "cached_tokens": 0
+      },
+      "output_tokens": 34,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 60154
+    },
+    "error": null,
+    "output": "{\"ok\":true,\"seen_kind\":\"text\",\"payload_marker\":\"SIZE_MARKER_20000_706d291b\"}"
+  },
+  {
+    "name": "text-280000w",
+    "words": 280000,
+    "marker": "SIZE_MARKER_280000_0c466b8f",
+    "payload_chars": 3360101,
+    "mode": "text",
+    "http_status": "200",
+    "curl_status": 0,
+    "curl_error": null,
+    "curl_stderr": "",
+    "elapsed_ms": 5661,
+    "request_bytes": 3361209,
+    "eventCount": 4,
+    "responseStatus": "failed",
+    "usage": null,
+    "error": {
+      "code": "context_length_exceeded",
+      "message": "Your input exceeds the context window of this model. Please adjust your input and try again."
+    },
+    "output": ""
+  },
+  {
+    "name": "file-280000w",
+    "words": 280000,
+    "marker": "SIZE_MARKER_280000_0c466b8f",
+    "payload_chars": 3360101,
+    "mode": "input_file",
+    "http_status": "200",
+    "curl_status": 0,
+    "curl_error": null,
+    "curl_stderr": "",
+    "elapsed_ms": 1824,
+    "request_bytes": 4481348,
+    "eventCount": 4,
+    "responseStatus": "failed",
+    "usage": null,
+    "error": {
+      "code": "context_length_exceeded",
+      "message": "Your input exceeds the context window of this model. Please adjust your input and try again."
+    },
+    "output": ""
+  }
+]

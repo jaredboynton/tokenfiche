@@ -1,0 +1,20 @@
+{
+  "needles": [
+    {
+      "name": "alpha",
+      "marker": "NEEDLE_ALPHA::AHAB-SEES-7429",
+      "offset": 125000,
+      "char_index": 496692,
+      "actual_token_offset": 125001,
+      "context": "cing the life and death peril\nso close to them ahead, yet with their eyes on the intense countenance\nof the mate in the stern of the boat, they knew that the imminent\ninstant had\n\nNEEDLE_ALPHA::AHAB-SEES-7429\n\n come; they heard, too, an enormous wallowing sound as of\nfifty elephants stirring in their litter. Meanwhile the boat was still\nbooming through the mist, the waves curling and h"
+    },
+    {
+      "name": "beta",
+      "marker": "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+      "offset": 325000,
+      "char_index": 1302746,
+      "actual_token_offset": 325014,
+      "context": "d I beheld the successive tiers of casks and barrels, whose contents\nwere all destined to be consumed in due course by the ship\u2019s company, my\nheart has sunk within me.\n\nAlthough,\n\nNEEDLE_BETA::QUEEQUEG-LANTERN-1836\n\n as a general case, a ship unlucky in falling in with\nwhales continues to cruise after them until she has barely sufficient\nprovisions remaining to take her home, turning round t"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "marker": "BLOB_PROBE_MARKER_444f5fa67c57",
+  "probes": [
+    {
+      "name": "small-text",
+      "status": "200",
+      "elapsedMs": 1219,
+      "reqBytes": 1123,
+      "headersPath": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-blob-context-probe-2026-06-20/small-text.headers.txt",
+      "bodyPath": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-blob-context-probe-2026-06-20/small-text.sse",
+      "eventCount": 36,
+      "responseStatus": "completed",
+      "usage": {
+        "input_tokens": 94,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 37,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 131
+      },
+      "error": null,
+      "output": "{\"ok\":true,\"seen_kind\":\"text\",\"payload_marker\":\"BLOB_PROBE_MARKER_444f5fa67c57\"}"
+    },
+    {
+      "name": "small-input-file-data-url",
+      "status": "200",
+      "elapsedMs": 1375,
+      "reqBytes": 1335,
+      "headersPath": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-blob-context-probe-2026-06-20/small-input-file-data-url.headers.txt",
+      "bodyPath": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-blob-context-probe-2026-06-20/small-input-file-data-url.sse",
+      "eventCount": 36,
+      "responseStatus": "completed",
+      "usage": {
+        "input_tokens": 109,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 37,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 146
+      },
+      "error": null,
+      "output": "{\"ok\":true,\"seen_kind\":\"blob\",\"payload_marker\":\"BLOB_PROBE_MARKER_444f5fa67c57\"}"
+    },
+    {
+      "name": "small-input-file-raw-base64",
+      "status": "400",
+      "elapsedMs": 263,
+      "reqBytes": 1327,
+      "headersPath": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-blob-context-probe-2026-06-20/small-input-file-raw-base64.headers.txt",
+      "bodyPath": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-blob-context-probe-2026-06-20/small-input-file-raw-base64.sse",
+      "eventCount": 0,
+      "responseStatus": null,
+      "usage": null,
+      "error": null,
+      "output": ""
+    }
+  ]
+}

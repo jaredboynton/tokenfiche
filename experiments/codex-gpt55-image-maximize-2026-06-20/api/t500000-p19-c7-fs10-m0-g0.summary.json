@@ -1,0 +1,62 @@
+{
+  "name": "t500000-p19-c7-fs10-m0-g0",
+  "layout_manifest": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t500000-p19-c7-fs10-m0-g0/manifest.json",
+  "source_tokens": 500000,
+  "page_count": 19,
+  "columns": 7,
+  "font_size": 10,
+  "margin": 0,
+  "gutter": 0,
+  "ink_width_pct_avg_rendered": 99.8,
+  "estimated_total_patches": 167884,
+  "http_status_line": "HTTP/2 200 ",
+  "curl_returncode": 0,
+  "curl_stderr": "",
+  "elapsed_seconds": 32.462,
+  "request_bytes": 16131847,
+  "event_count": 294,
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 201639,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 382,
+    "output_tokens_details": {
+      "reasoning_tokens": 84
+    },
+    "total_tokens": 202021
+  },
+  "error": null,
+  "classification": "completed_all_needles_found",
+  "expected_markers": [
+    "NEEDLE_ALPHA::AHAB-SEES-7429",
+    "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+    "NEEDLE_GAMMA::MELVILLE-SURF-9021"
+  ],
+  "found_marker_strings": [
+    "NEEDLE_ALPHA::AHAB-SEES-7429",
+    "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+    "NEEDLE_GAMMA::MELVILLE-SURF-9021"
+  ],
+  "output_text": "{\"ok\":true,\"found_markers\":[{\"marker\":\"NEEDLE_ALPHA::AHAB-SEES-7429\",\"surrounding_context\":\"...to whom the story of the White Whale had eventually come.\\n\\nNEEDLE_ALPHA::AHAB-SEES-7429\\n\\n...maritime life, far more than in that of terra firma...\"},{\"marker\":\"NEEDLE_BETA::QUEEQUEG-LANTERN-1836\",\"surrounding_context\":\"...orders to have the leg completed that night; and to provide all the fittings for it, independent of those pertaining to the distrusted one in use. Moreover, the ship's forge was ordered to be hoisted out of its temporary idleness in the hold, and to accelerate the affair...\\n\\nNEEDLE_BETA::QUEEQUEG-LANTERN-1836\\n\\nCHAPTER 107. The Carpenter.\"},{\"marker\":\"NEEDLE_GAMMA::MELVILLE-SURF-9021\",\"surrounding_context\":\"...all this while we are steering for that island as fast as wind and water will let us.\\n\\nNEEDLE_GAMMA::MELVILLE-SURF-9021\\n\\nIn spite of the unpleasant reflections that crowded upon my mind...\"}],\"missing_markers\":[],\"notes\":\"Three needle markers are visible in the provided dense text images.\"}",
+  "parsed_output": {
+    "ok": true,
+    "found_markers": [
+      {
+        "marker": "NEEDLE_ALPHA::AHAB-SEES-7429",
+        "surrounding_context": "...to whom the story of the White Whale had eventually come.\n\nNEEDLE_ALPHA::AHAB-SEES-7429\n\n...maritime life, far more than in that of terra firma..."
+      },
+      {
+        "marker": "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+        "surrounding_context": "...orders to have the leg completed that night; and to provide all the fittings for it, independent of those pertaining to the distrusted one in use. Moreover, the ship's forge was ordered to be hoisted out of its temporary idleness in the hold, and to accelerate the affair...\n\nNEEDLE_BETA::QUEEQUEG-LANTERN-1836\n\nCHAPTER 107. The Carpenter."
+      },
+      {
+        "marker": "NEEDLE_GAMMA::MELVILLE-SURF-9021",
+        "surrounding_context": "...all this while we are steering for that island as fast as wind and water will let us.\n\nNEEDLE_GAMMA::MELVILLE-SURF-9021\n\nIn spite of the unpleasant reflections that crowded upon my mind..."
+      }
+    ],
+    "missing_markers": [],
+    "notes": "Three needle markers are visible in the provided dense text images."
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "name": "one-image-375000",
+  "http_status": "200",
+  "curl_status": 0,
+  "curl_stderr": "",
+  "elapsed_seconds": 11.46,
+  "request_bytes": 29397879,
+  "image_paths": [
+    "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-window-probe-2026-06-20/one-image-375000.png"
+  ],
+  "image_metas": [
+    {
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-window-probe-2026-06-20/one-image-375000.png",
+      "sha256": "cd8d0b5b44a156113f9d715554c0cd7148dec76844af9f6d49976d08711b72a6",
+      "bytes": 22047178,
+      "columns": 900,
+      "font_size": 10,
+      "font_path": "/System/Library/Fonts/Supplemental/Courier New.ttf",
+      "line_count": 27024,
+      "width": 5448,
+      "height": 324336,
+      "identify": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-window-probe-2026-06-20/one-image-375000.png PNG 5448x324336 5448x324336+0+0 8-bit Grayscale Gray 256c 21.0258MiB 0.000u 0:00.000",
+      "approx_original_patches": 1733256
+    }
+  ],
+  "event_count": 71,
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 1059,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 148,
+    "output_tokens_details": {
+      "reasoning_tokens": 73
+    },
+    "total_tokens": 1207
+  },
+  "error": null,
+  "output": "{\"ok\":false,\"found_markers\":[],\"missing_markers\":[\"needle marker 1\",\"needle marker 2\"],\"notes\":\"The provided image is extremely narrow and the rendered text is too small/low-resolution to read. I cannot visually identify any exact needle marker strings without inventing them.\"}",
+  "parsed_output": {
+    "ok": false,
+    "found_markers": [],
+    "missing_markers": [
+      "needle marker 1",
+      "needle marker 2"
+    ],
+    "notes": "The provided image is extremely narrow and the rendered text is too small/low-resolution to read. I cannot visually identify any exact needle marker strings without inventing them."
+  },
+  "classification": "completed_missing_needles",
+  "expected_markers": [
+    "NEEDLE_ALPHA::AHAB-SEES-7429",
+    "NEEDLE_BETA::QUEEQUEG-LANTERN-1836"
+  ],
+  "found_marker_strings": []
+}

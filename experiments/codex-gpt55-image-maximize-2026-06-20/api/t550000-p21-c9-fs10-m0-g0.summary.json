@@ -1,0 +1,62 @@
+{
+  "name": "t550000-p21-c9-fs10-m0-g0",
+  "layout_manifest": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t550000-p21-c9-fs10-m0-g0/manifest.json",
+  "source_tokens": 550000,
+  "page_count": 21,
+  "columns": 9,
+  "font_size": 10,
+  "margin": 0,
+  "gutter": 0,
+  "ink_width_pct_avg_rendered": 97.16,
+  "estimated_total_patches": 185556,
+  "http_status_line": "HTTP/2 200 ",
+  "curl_returncode": 0,
+  "curl_stderr": "",
+  "elapsed_seconds": 30.955,
+  "request_bytes": 17869611,
+  "event_count": 192,
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 222847,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 303,
+    "output_tokens_details": {
+      "reasoning_tokens": 107
+    },
+    "total_tokens": 223150
+  },
+  "error": null,
+  "classification": "completed_all_needles_found",
+  "expected_markers": [
+    "NEEDLE_ALPHA::AHAB-SEES-7429",
+    "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+    "NEEDLE_GAMMA::MELVILLE-SURF-9021"
+  ],
+  "found_marker_strings": [
+    "NEEDLE_ALPHA::AHAB-SEES-7429",
+    "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+    "NEEDLE_GAMMA::MELVILLE-SURF-9021"
+  ],
+  "output_text": "{\"ok\":true,\"found_markers\":[{\"marker\":\"NEEDLE_ALPHA::AHAB-SEES-7429\",\"surrounding_context\":\"CHAPTER 44. The Chart. ... NEEDLE_ALPHA::AHAB-SEES-7429 ...\"},{\"marker\":\"NEEDLE_BETA::QUEEQUEG-LANTERN-1836\",\"surrounding_context\":\"... saw the crushed copper sight-tubes of the quadrant he had the day before dashed. NEEDLE_BETA::QUEEQUEG-LANTERN-1836 ...\"},{\"marker\":\"NEEDLE_GAMMA::MELVILLE-SURF-9021\",\"surrounding_context\":\"... What it was, we shall presently see. NEEDLE_GAMMA::MELVILLE-SURF-9021 ...\"}],\"missing_markers\":[],\"notes\":\"Extracted only marker strings visible in the provided images.\"}",
+  "parsed_output": {
+    "ok": true,
+    "found_markers": [
+      {
+        "marker": "NEEDLE_ALPHA::AHAB-SEES-7429",
+        "surrounding_context": "CHAPTER 44. The Chart. ... NEEDLE_ALPHA::AHAB-SEES-7429 ..."
+      },
+      {
+        "marker": "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+        "surrounding_context": "... saw the crushed copper sight-tubes of the quadrant he had the day before dashed. NEEDLE_BETA::QUEEQUEG-LANTERN-1836 ..."
+      },
+      {
+        "marker": "NEEDLE_GAMMA::MELVILLE-SURF-9021",
+        "surrounding_context": "... What it was, we shall presently see. NEEDLE_GAMMA::MELVILLE-SURF-9021 ..."
+      }
+    ],
+    "missing_markers": [],
+    "notes": "Extracted only marker strings visible in the provided images."
+  }
+}

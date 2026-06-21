@@ -1,0 +1,105 @@
+{
+  "variant": "t909728-p30-c10-fs10-lh10-cpl50-m0-g0-ext562",
+  "source_tokens": 909728,
+  "source_sha256": "5828e2cee1c5ef9e10ea12cdf9be80c91d9e37ccb41cd17dd56411c2d24d9aa7",
+  "base_source": "runs/codex-gpt55-image-maximize-2026-06-20/t562500-p21-c10-fs10-m0-g0/source-562500-tokens.txt",
+  "extension_sources": [
+    "White-Jacket.txt",
+    "Typee.txt",
+    "Omoo.txt",
+    "Moby-Dick.txt",
+    "repeated x4"
+  ],
+  "layout": {
+    "page_count": 30,
+    "columns": 10,
+    "font_size": 10,
+    "font_path": "/System/Library/Fonts/Supplemental/Courier New.ttf",
+    "margin": 0,
+    "gutter": 0,
+    "image_width": 3000,
+    "image_height": 3000,
+    "column_width": 300,
+    "chars_per_line": 50,
+    "line_height": 10,
+    "lines_per_col": 300,
+    "lines_per_page": 3000
+  },
+  "line_count": 90000,
+  "capacity": 90000,
+  "preflight_pass": true,
+  "markers": [
+    {
+      "name": "alpha",
+      "marker": "NEEDLE_ALPHA::AHAB-SEES-7429",
+      "actual_token_offset": 112501
+    },
+    {
+      "name": "beta",
+      "marker": "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+      "actual_token_offset": 281265
+    },
+    {
+      "name": "gamma",
+      "marker": "NEEDLE_GAMMA::MELVILLE-SURF-9021",
+      "actual_token_offset": 506283
+    }
+  ],
+  "marker_positions": {
+    "alpha": {
+      "page": 4,
+      "column": 6,
+      "row": 283,
+      "line": "NEEDLE_ALPHA::AHAB-SEES-7429"
+    },
+    "beta": {
+      "page": 9,
+      "column": 10,
+      "row": 293,
+      "line": "NEEDLE_BETA::QUEEQUEG-LANTERN-1836"
+    },
+    "gamma": {
+      "page": 17,
+      "column": 6,
+      "row": 31,
+      "line": "NEEDLE_GAMMA::MELVILLE-SURF-9021"
+    }
+  },
+  "estimated_total_patches": 265080,
+  "pixels": 270000000,
+  "ink_width_pct_avg_rendered": 100.0,
+  "ink_width_pct_min_rendered": 100.0,
+  "ink_width_pct_by_page": [
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0,
+    100.0
+  ],
+  "total_image_bytes": 20542532
+}

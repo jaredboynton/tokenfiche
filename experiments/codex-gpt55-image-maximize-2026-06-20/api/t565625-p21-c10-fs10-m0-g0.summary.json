@@ -1,0 +1,64 @@
+{
+  "name": "t565625-p21-c10-fs10-m0-g0",
+  "layout_manifest": "runs/codex-gpt55-image-maximize-2026-06-20/t565625-p21-c10-fs10-m0-g0/manifest.json",
+  "source_tokens": 565625,
+  "page_count": 21,
+  "columns": 10,
+  "font_size": 10,
+  "margin": 0,
+  "gutter": 0,
+  "line_height": 10,
+  "chars_per_line": 50,
+  "line_count": 55776,
+  "capacity": 63000,
+  "ink_width_pct_avg_rendered": 97.89,
+  "ink_width_pct_min_rendered": 60.0,
+  "estimated_total_patches": 185556,
+  "http_status_line": "HTTP/2 200 ",
+  "curl_returncode": 0,
+  "elapsed_seconds": 38.735,
+  "request_bytes": 17083996,
+  "event_count": 215,
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 222847,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 735,
+    "output_tokens_details": {
+      "reasoning_tokens": 516
+    },
+    "total_tokens": 223582
+  },
+  "error": null,
+  "classification": "completed_missing_needles",
+  "expected_markers": [
+    "NEEDLE_ALPHA::AHAB-SEES-7429",
+    "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+    "NEEDLE_GAMMA::MELVILLE-SURF-9021"
+  ],
+  "found_marker_strings": [
+    "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+    "NEEDLE_GAMMA::MELVILLE-SURF-9021"
+  ],
+  "missing_marker_strings": [
+    "NEEDLE_ALPHA::AHAB-SEES-7429"
+  ],
+  "output_text": "{\"ok\":true,\"found_markers\":[{\"marker\":\"NEEDLE_BETA::QUEEQUEG-LANTERN-1836\",\"surrounding_context\":\"... and blast all the chimneys!\\\" \\\"Aye, aye!\\\" cried the sailors, as with swinging tarpaulins they hailed the act of nailing the gold to the mast. NEEDLE_BETA::QUEEQUEG-LANTERN-1836 FRENCH SAILOR. Hist, boys!...\"},{\"marker\":\"NEEDLE_GAMMA::MELVILLE-SURF-9021\",\"surrounding_context\":\"... 'Some rejoinder'; and he went on. \\\"Those poor fellows I saw the other day\u2014the sick, I mean\u2014how are they?\\\" ... NEEDLE_GAMMA::MELVILLE-SURF-9021\"}],\"missing_markers\":[],\"notes\":\"Two exact needle marker strings were visible in the provided image. I did not identify a third exact marker string.\"}",
+  "parsed_output": {
+    "ok": true,
+    "found_markers": [
+      {
+        "marker": "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+        "surrounding_context": "... and blast all the chimneys!\" \"Aye, aye!\" cried the sailors, as with swinging tarpaulins they hailed the act of nailing the gold to the mast. NEEDLE_BETA::QUEEQUEG-LANTERN-1836 FRENCH SAILOR. Hist, boys!..."
+      },
+      {
+        "marker": "NEEDLE_GAMMA::MELVILLE-SURF-9021",
+        "surrounding_context": "... 'Some rejoinder'; and he went on. \"Those poor fellows I saw the other day\u2014the sick, I mean\u2014how are they?\" ... NEEDLE_GAMMA::MELVILLE-SURF-9021"
+      }
+    ],
+    "missing_markers": [],
+    "notes": "Two exact needle marker strings were visible in the provided image. I did not identify a third exact marker string."
+  }
+}

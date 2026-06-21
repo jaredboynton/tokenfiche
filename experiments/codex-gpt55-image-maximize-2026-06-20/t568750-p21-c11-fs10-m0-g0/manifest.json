@@ -1,0 +1,203 @@
+{
+  "variant": "t568750-p21-c11-fs10-m0-g0",
+  "source_tokens": 568750,
+  "source_sha256": "a324a8caa04e8991c929e35e4b750f9a174c422db86b5ad22f449ca121d905fd",
+  "base_source": "runs/codex-gpt55-image-maximize-2026-06-20/t575000-p22-c10-fs10-m0-g0/source-575000-tokens.txt",
+  "layout": {
+    "page_count": 21,
+    "columns": 11,
+    "font_size": 10,
+    "font_path": "/System/Library/Fonts/Supplemental/Courier New.ttf",
+    "margin": 0,
+    "gutter": 0,
+    "image_width": 3000,
+    "image_height": 3000,
+    "column_width": 272.73,
+    "char_width": 6,
+    "chars_per_line": 45,
+    "line_height": 10,
+    "lines_per_col": 300,
+    "lines_per_page": 3300
+  },
+  "line_count": 61693,
+  "capacity": 69300,
+  "preflight_pass": true,
+  "markers": [
+    {
+      "name": "alpha",
+      "marker": "NEEDLE_ALPHA::AHAB-SEES-7429",
+      "actual_token_offset": 115001
+    },
+    {
+      "name": "beta",
+      "marker": "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+      "actual_token_offset": 287515
+    },
+    {
+      "name": "gamma",
+      "marker": "NEEDLE_GAMMA::MELVILLE-SURF-9021",
+      "actual_token_offset": 517533
+    }
+  ],
+  "marker_positions": {
+    "alpha": {
+      "page": 4,
+      "column": 8,
+      "row": 95,
+      "line": "NEEDLE_ALPHA::AHAB-SEES-7429"
+    },
+    "beta": {
+      "page": 10,
+      "column": 3,
+      "row": 7,
+      "line": "NEEDLE_BETA::QUEEQUEG-LANTERN-1836"
+    },
+    "gamma": {
+      "page": 17,
+      "column": 10,
+      "row": 281,
+      "line": "NEEDLE_GAMMA::MELVILLE-SURF-9021"
+    }
+  },
+  "estimated_total_patches": 185556,
+  "ink_width_pct_avg_rendered": 98.47,
+  "ink_width_pct_min_rendered": 72.63,
+  "ink_width_pct_by_page": [
+    99.9,
+    99.9,
+    99.93,
+    99.9,
+    99.9,
+    99.9,
+    99.9,
+    99.9,
+    99.9,
+    99.9,
+    99.9,
+    99.9,
+    99.9,
+    99.9,
+    99.9,
+    99.9,
+    99.9,
+    99.9,
+    72.63
+  ],
+  "ink_bboxes": [
+    [
+      0,
+      3,
+      2997,
+      3000
+    ],
+    [
+      0,
+      3,
+      2997,
+      3000
+    ],
+    [
+      0,
+      3,
+      2998,
+      3000
+    ],
+    [
+      0,
+      3,
+      2997,
+      3000
+    ],
+    [
+      0,
+      3,
+      2997,
+      3000
+    ],
+    [
+      0,
+      3,
+      2997,
+      3000
+    ],
+    [
+      0,
+      3,
+      2997,
+      3000
+    ],
+    [
+      0,
+      3,
+      2997,
+      3000
+    ],
+    [
+      0,
+      3,
+      2997,
+      3000
+    ],
+    [
+      0,
+      3,
+      2997,
+      3000
+    ],
+    [
+      0,
+      3,
+      2997,
+      3000
+    ],
+    [
+      0,
+      3,
+      2997,
+      3000
+    ],
+    [
+      0,
+      3,
+      2997,
+      3000
+    ],
+    [
+      0,
+      3,
+      2997,
+      3000
+    ],
+    [
+      0,
+      3,
+      2997,
+      3000
+    ],
+    [
+      0,
+      3,
+      2997,
+      3000
+    ],
+    [
+      0,
+      3,
+      2997,
+      3000
+    ],
+    [
+      0,
+      3,
+      2997,
+      3000
+    ],
+    [
+      0,
+      3,
+      2179,
+      3000
+    ]
+  ],
+  "total_image_bytes": 12956408
+}

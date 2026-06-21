@@ -1,0 +1,13 @@
+{
+  "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-window-probe-2026-06-20/one-image-375000.png",
+  "sha256": "cd8d0b5b44a156113f9d715554c0cd7148dec76844af9f6d49976d08711b72a6",
+  "bytes": 22047178,
+  "columns": 900,
+  "font_size": 10,
+  "font_path": "/System/Library/Fonts/Supplemental/Courier New.ttf",
+  "line_count": 27024,
+  "width": 5448,
+  "height": 324336,
+  "identify": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-window-probe-2026-06-20/one-image-375000.png PNG 5448x324336 5448x324336+0+0 8-bit Grayscale Gray 256c 21.0258MiB 0.000u 0:00.000",
+  "approx_original_patches": 1733256
+}

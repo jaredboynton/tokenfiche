@@ -1,0 +1,39 @@
+{
+  "clientVersion": "0.142.0-alpha.7",
+  "userAgent": "codex_cli_rs/0.142.0-alpha.7 (Mac OS 15.7.3; arm64) reqwest/0.12.28",
+  "results": [
+    {
+      "url": "https://chatgpt.com/backend-api/codex/models?client_version=<client_version>",
+      "status": "200",
+      "matchCount": 2,
+      "gpt55": [
+        {
+          "slug": "gpt-5.5",
+          "display_name": "GPT-5.5",
+          "context_window": 272000,
+          "max_context_window": 272000,
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "support_verbosity": true,
+          "supports_parallel_tool_calls": true,
+          "use_responses_lite": false
+        },
+        {
+          "slug": "gpt-5.4",
+          "display_name": "GPT-5.4",
+          "context_window": 272000,
+          "max_context_window": 1000000,
+          "input_modalities": [
+            "text",
+            "image"
+          ],
+          "support_verbosity": true,
+          "supports_parallel_tool_calls": true,
+          "use_responses_lite": false
+        }
+      ]
+    }
+  ]
+}

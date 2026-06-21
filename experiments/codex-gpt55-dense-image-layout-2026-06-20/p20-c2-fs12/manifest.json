@@ -1,0 +1,97 @@
+{
+  "variant": "p20-c2-fs12",
+  "source_path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-window-probe-2026-06-20/source-375000-tokens.txt",
+  "source_tokens": 375000,
+  "source_chars": 1517938,
+  "reflowed_paragraph_count": 3370,
+  "canvas": {
+    "width": 3000,
+    "height": 3000,
+    "patches_per_image": 8836,
+    "max_dimension": 3000
+  },
+  "layout": {
+    "page_count": 20,
+    "columns": 2,
+    "font_size": 12,
+    "font_path": "/System/Library/Fonts/Supplemental/Courier New.ttf",
+    "margin": 36,
+    "gutter": 36,
+    "column_width": 1446,
+    "chars_per_line": 206,
+    "line_height": 13,
+    "lines_per_col": 225,
+    "lines_per_page": 450
+  },
+  "line_count": 12610,
+  "capacity_lines": 9000,
+  "fits_all_text": false,
+  "overflow_lines": 3610,
+  "estimated_total_patches": 176720,
+  "image_count_rendered": 3,
+  "image_metrics": [
+    {
+      "page": 1,
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-dense-image-layout-2026-06-20/p20-c2-fs12/page-001.png",
+      "bytes": 292958,
+      "bbox": [
+        36,
+        38,
+        2960,
+        2960
+      ],
+      "ink_width_pct": 97.47,
+      "ink_height_pct": 97.4,
+      "bbox_area_pct": 94.93
+    },
+    {
+      "page": 2,
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-dense-image-layout-2026-06-20/p20-c2-fs12/page-002.png",
+      "bytes": 588118,
+      "bbox": [
+        35,
+        38,
+        2960,
+        2960
+      ],
+      "ink_width_pct": 97.5,
+      "ink_height_pct": 97.4,
+      "bbox_area_pct": 94.97
+    },
+    {
+      "page": 3,
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-dense-image-layout-2026-06-20/p20-c2-fs12/page-003.png",
+      "bytes": 621290,
+      "bbox": [
+        36,
+        38,
+        2961,
+        2960
+      ],
+      "ink_width_pct": 97.5,
+      "ink_height_pct": 97.4,
+      "bbox_area_pct": 94.97
+    }
+  ],
+  "ink_width_pct_avg_rendered": 97.49,
+  "ink_width_pct_min_rendered": 97.47,
+  "marker_locations": {
+    "alpha": {
+      "marker": "NEEDLE_ALPHA::AHAB-SEES-7429",
+      "line_index": 4299,
+      "page": 10,
+      "column": 2,
+      "row": 25,
+      "line": "NEEDLE_ALPHA::AHAB-SEES-7429"
+    },
+    "beta": {
+      "marker": "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+      "line_index": 10915,
+      "page": 25,
+      "column": 1,
+      "row": 116,
+      "line": "NEEDLE_BETA::QUEEQUEG-LANTERN-1836"
+    }
+  },
+  "preflight_pass": false
+}

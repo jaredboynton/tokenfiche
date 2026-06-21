@@ -1,0 +1,109 @@
+{
+  "variant": "t917067-p34-c10-fs10-m0-g0-ext562",
+  "source_tokens": 917067,
+  "source_sha256": "b6bd97b06019677a5fb4bb0d93be14bd73f38a4fd02a2d1541633a7d0c7eb4b7",
+  "base_source": "runs/codex-gpt55-image-maximize-2026-06-20/t562500-p21-c10-fs10-m0-g0/source-562500-tokens.txt",
+  "extension_sources": [
+    "White-Jacket.txt",
+    "Typee.txt",
+    "Omoo.txt",
+    "Moby-Dick.txt",
+    "repeated x4"
+  ],
+  "layout": {
+    "page_count": 34,
+    "columns": 10,
+    "font_size": 10,
+    "font_path": "/System/Library/Fonts/Supplemental/Courier New.ttf",
+    "margin": 0,
+    "gutter": 0,
+    "image_width": 3000,
+    "image_height": 3000,
+    "column_width": 300,
+    "chars_per_line": 49,
+    "line_height": 11,
+    "lines_per_col": 272,
+    "lines_per_page": 2720
+  },
+  "line_count": 92480,
+  "capacity": 92480,
+  "preflight_pass": true,
+  "markers": [
+    {
+      "name": "alpha",
+      "marker": "NEEDLE_ALPHA::AHAB-SEES-7429",
+      "actual_token_offset": 112501
+    },
+    {
+      "name": "beta",
+      "marker": "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+      "actual_token_offset": 281265
+    },
+    {
+      "name": "gamma",
+      "marker": "NEEDLE_GAMMA::MELVILLE-SURF-9021",
+      "actual_token_offset": 506283
+    }
+  ],
+  "marker_positions": {
+    "alpha": {
+      "page": 5,
+      "column": 1,
+      "row": 99,
+      "line": "NEEDLE_ALPHA::AHAB-SEES-7429"
+    },
+    "beta": {
+      "page": 11,
+      "column": 2,
+      "row": 54,
+      "line": "NEEDLE_BETA::QUEEQUEG-LANTERN-1836"
+    },
+    "gamma": {
+      "page": 19,
+      "column": 6,
+      "row": 163,
+      "line": "NEEDLE_GAMMA::MELVILLE-SURF-9021"
+    }
+  },
+  "estimated_total_patches": 300424,
+  "pixels": 306000000,
+  "ink_width_pct_avg_rendered": 99.8,
+  "ink_width_pct_min_rendered": 99.8,
+  "ink_width_pct_by_page": [
+    99.8,
+    99.8,
+    99.8,
+    99.8,
+    99.8,
+    99.8,
+    99.8,
+    99.8,
+    99.8,
+    99.8,
+    99.8,
+    99.8,
+    99.8,
+    99.8,
+    99.8,
+    99.8,
+    99.8,
+    99.8,
+    99.8,
+    99.8,
+    99.8,
+    99.8,
+    99.8,
+    99.8,
+    99.8,
+    99.8,
+    99.8,
+    99.8,
+    99.8,
+    99.8,
+    99.8,
+    99.8,
+    99.8,
+    99.8
+  ],
+  "total_image_bytes": 23214262
+}

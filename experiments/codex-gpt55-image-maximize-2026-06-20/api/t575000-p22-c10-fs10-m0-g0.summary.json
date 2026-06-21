@@ -1,0 +1,61 @@
+{
+  "name": "t575000-p22-c10-fs10-m0-g0",
+  "layout_manifest": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t575000-p22-c10-fs10-m0-g0/manifest.json",
+  "source_tokens": 575000,
+  "page_count": 22,
+  "columns": 10,
+  "font_size": 10,
+  "margin": 0,
+  "gutter": 0,
+  "ink_width_pct_avg_rendered": 96.62,
+  "estimated_total_patches": 194392,
+  "http_status_line": "HTTP/2 200 ",
+  "curl_returncode": 0,
+  "curl_stderr": "",
+  "elapsed_seconds": 36.323,
+  "request_bytes": 18691862,
+  "event_count": 429,
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 233451,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 522,
+    "output_tokens_details": {
+      "reasoning_tokens": 89
+    },
+    "total_tokens": 233973
+  },
+  "error": null,
+  "classification": "completed_missing_needles",
+  "expected_markers": [
+    "NEEDLE_ALPHA::AHAB-SEES-7429",
+    "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+    "NEEDLE_GAMMA::MELVILLE-SURF-9021"
+  ],
+  "found_marker_strings": [
+    "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+    "NEEDLE_GAMMA::MELVILLE-SURF-9021"
+  ],
+  "output_text": "{\"ok\":true,\"found_markers\":[{\"marker\":\"NEEDLE_ALPHA--AHAB-REEFS-7429\",\"surrounding_context\":\"Being returned home at last, Captain Pollard once more sailed for the Pacific in command of another ship, but the gods shipwrecked him again upon unknown rocks and breakers; for the second time his ship was utterly lost, and forthwith it was found that sea he has never tempted it since. At this day Captain Pollard is a resident of Nantucket. I have seen Owen Chase, who was chief mate of the Essex at the time of the tragedy; I\\n\\nNEEDLE_ALPHA--AHAB-REEFS-7429\\n\\nhave read his plain and faithful narrative; I have conversed with his son; and all this within a few miles of the scene of the catastrophe.\"},{\"marker\":\"NEEDLE_BETA::QUEEQUEG-LANTERN-1836\",\"surrounding_context\":\"He has his humanities! As I live he has hugged me.\\n\\nNEEDLE_BETA::QUEEQUEG-LANTERN-1836\\n\\nwere Adam, staggering beneath the piled centuries since Paradise. God! God! God!--crack my heart!--stave my brain!--mockery! mockery! bitter, biting mockery of grey hairs, have I lived enough joy to wear ye; and seem and feel thus intolerably old?\"},{\"marker\":\"NEEDLE_GAMMA::MELVILLE-SURF-9021\",\"surrounding_context\":\"CHAPTER XXV. THE REINE BLANCHE\\n\\nLooking very demure, the men made some rejoinder, and he went on.\\n\\nNEEDLE_GAMMA::MELVILLE-SURF-9021\\n\\n\\\"Those poor fellows!\\\" said the other day the sick, \\\"I mean--how are they?\\\" and he scrutinized the company.\"}],\"missing_markers\":[],\"notes\":\"All three visible needle marker strings were found in the provided dense text images.\"}",
+  "parsed_output": {
+    "ok": true,
+    "found_markers": [
+      {
+        "marker": "NEEDLE_ALPHA--AHAB-REEFS-7429",
+        "surrounding_context": "Being returned home at last, Captain Pollard once more sailed for the Pacific in command of another ship, but the gods shipwrecked him again upon unknown rocks and breakers; for the second time his ship was utterly lost, and forthwith it was found that sea he has never tempted it since. At this day Captain Pollard is a resident of Nantucket. I have seen Owen Chase, who was chief mate of the Essex at the time of the tragedy; I\n\nNEEDLE_ALPHA--AHAB-REEFS-7429\n\nhave read his plain and faithful narrative; I have conversed with his son; and all this within a few miles of the scene of the catastrophe."
+      },
+      {
+        "marker": "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+        "surrounding_context": "He has his humanities! As I live he has hugged me.\n\nNEEDLE_BETA::QUEEQUEG-LANTERN-1836\n\nwere Adam, staggering beneath the piled centuries since Paradise. God! God! God!--crack my heart!--stave my brain!--mockery! mockery! bitter, biting mockery of grey hairs, have I lived enough joy to wear ye; and seem and feel thus intolerably old?"
+      },
+      {
+        "marker": "NEEDLE_GAMMA::MELVILLE-SURF-9021",
+        "surrounding_context": "CHAPTER XXV. THE REINE BLANCHE\n\nLooking very demure, the men made some rejoinder, and he went on.\n\nNEEDLE_GAMMA::MELVILLE-SURF-9021\n\n\"Those poor fellows!\" said the other day the sick, \"I mean--how are they?\" and he scrutinized the company."
+      }
+    ],
+    "missing_markers": [],
+    "notes": "All three visible needle marker strings were found in the provided dense text images."
+  }
+}

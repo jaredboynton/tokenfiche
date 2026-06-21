@@ -1,0 +1,55 @@
+{
+  "name": "p21-c7-fs12-g24",
+  "layout_manifest": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-dense-image-layout-2026-06-20/p21-c7-fs12-g24/manifest.json",
+  "source_tokens": 375000,
+  "page_count": 21,
+  "columns": 7,
+  "font_size": 12,
+  "gutter": 24,
+  "ink_width_pct_avg_rendered": 97.28,
+  "estimated_total_patches": 185556,
+  "http_status_line": "HTTP/2 200 ",
+  "curl_returncode": 0,
+  "curl_stderr": "",
+  "elapsed_seconds": 28.906,
+  "request_bytes": 20936096,
+  "event_count": 221,
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 222845,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 298,
+    "output_tokens_details": {
+      "reasoning_tokens": 73
+    },
+    "total_tokens": 223143
+  },
+  "error": null,
+  "classification": "completed_all_needles_found",
+  "expected_markers": [
+    "NEEDLE_ALPHA::AHAB-SEES-7429",
+    "NEEDLE_BETA::QUEEQUEG-LANTERN-1836"
+  ],
+  "found_marker_strings": [
+    "NEEDLE_ALPHA::AHAB-SEES-7429",
+    "NEEDLE_BETA::QUEEQUEG-LANTERN-1836"
+  ],
+  "output_text": "{\"ok\":true,\"found_markers\":[{\"marker\":\"NEEDLE_ALPHA::AHAB-SEES-7429\",\"surrounding_context\":\"Now all the boats were in keen pursuit ... the imminent instant had come; then they heard, too, an enormous wallowing sound ... NEEDLE_ALPHA::AHAB-SEES-7429 ... come; they heard, too, an enormous wallowing sound as of fifty elephants stirring in their litter.\"},{\"marker\":\"NEEDLE_BETA::QUEEQUEG-LANTERN-1836\",\"surrounding_context\":\"Although, when we had occasion to break out in the hold ... Although, when we had occasion to break out in the hold ... NEEDLE_BETA::QUEEQUEG-LANTERN-1836 ... As a general case, a ship unlucky in falling in with whales continues to cruise after them until she has barely sufficient provisions remaining to take her home.\"}],\"missing_markers\":[],\"notes\":\"Both embedded needle marker strings are visible in the provided dense text images.\"}",
+  "parsed_output": {
+    "ok": true,
+    "found_markers": [
+      {
+        "marker": "NEEDLE_ALPHA::AHAB-SEES-7429",
+        "surrounding_context": "Now all the boats were in keen pursuit ... the imminent instant had come; then they heard, too, an enormous wallowing sound ... NEEDLE_ALPHA::AHAB-SEES-7429 ... come; they heard, too, an enormous wallowing sound as of fifty elephants stirring in their litter."
+      },
+      {
+        "marker": "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+        "surrounding_context": "Although, when we had occasion to break out in the hold ... Although, when we had occasion to break out in the hold ... NEEDLE_BETA::QUEEQUEG-LANTERN-1836 ... As a general case, a ship unlucky in falling in with whales continues to cruise after them until she has barely sufficient provisions remaining to take her home."
+      }
+    ],
+    "missing_markers": [],
+    "notes": "Both embedded needle marker strings are visible in the provided dense text images."
+  }
+}

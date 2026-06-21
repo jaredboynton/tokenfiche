@@ -1,0 +1,59 @@
+{
+  "name": "t700000-p25-c15-fs10-m0-g0",
+  "layout_manifest": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t700000-p25-c15-fs10-m0-g0/manifest.json",
+  "source_tokens": 700000,
+  "page_count": 25,
+  "columns": 15,
+  "font_size": 10,
+  "margin": 0,
+  "gutter": 0,
+  "ink_width_pct_avg_rendered": 99.4,
+  "estimated_total_patches": 220900,
+  "http_status_line": "HTTP/2 200 ",
+  "curl_returncode": 0,
+  "curl_stderr": "",
+  "elapsed_seconds": 46.874,
+  "request_bytes": 22622992,
+  "event_count": 160,
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 265263,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 514,
+    "output_tokens_details": {
+      "reasoning_tokens": 350
+    },
+    "total_tokens": 265777
+  },
+  "error": null,
+  "classification": "completed_missing_needles",
+  "expected_markers": [
+    "NEEDLE_ALPHA::AHAB-SEES-7429",
+    "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+    "NEEDLE_GAMMA::MELVILLE-SURF-9021"
+  ],
+  "found_marker_strings": [
+    "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+    "NEEDLE_GAMMA::MELVILLE-SURF-9021"
+  ],
+  "output_text": "{\"ok\":false,\"found_markers\":[{\"marker\":\"NEEDLE_BETA::QUEEQUEG-LANTERN-1836\",\"surrounding_context\":\"NEEDLE_BETA::QUEEQUEG-LANTERN-1836 and directed my attention to a narrow opening in the foliage\"},{\"marker\":\"NEEDLE_GAMMA::MELVILLE-SURF-9021\",\"surrounding_context\":\"these delicacies. The great difficulty consists in so touching the fancy... NEEDLE_GAMMA::MELVILLE-SURF-9021\"}],\"missing_markers\":[\"third marker not identified\"],\"notes\":\"Two exact needle marker strings are visible. I did not identify the third marker in the provided image.\"}",
+  "parsed_output": {
+    "ok": false,
+    "found_markers": [
+      {
+        "marker": "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+        "surrounding_context": "NEEDLE_BETA::QUEEQUEG-LANTERN-1836 and directed my attention to a narrow opening in the foliage"
+      },
+      {
+        "marker": "NEEDLE_GAMMA::MELVILLE-SURF-9021",
+        "surrounding_context": "these delicacies. The great difficulty consists in so touching the fancy... NEEDLE_GAMMA::MELVILLE-SURF-9021"
+      }
+    ],
+    "missing_markers": [
+      "third marker not identified"
+    ],
+    "notes": "Two exact needle marker strings are visible. I did not identify the third marker in the provided image."
+  }
+}

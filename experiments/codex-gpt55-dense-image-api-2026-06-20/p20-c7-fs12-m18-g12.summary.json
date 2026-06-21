@@ -1,0 +1,56 @@
+{
+  "name": "p20-c7-fs12-m18-g12",
+  "layout_manifest": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-dense-image-layout-2026-06-20/p20-c7-fs12-m18-g12/manifest.json",
+  "source_tokens": 375000,
+  "page_count": 20,
+  "columns": 7,
+  "font_size": 12,
+  "gutter": 12,
+  "margin": 18,
+  "ink_width_pct_avg_rendered": 98.54,
+  "estimated_total_patches": 176720,
+  "http_status_line": "HTTP/2 200 ",
+  "curl_returncode": 0,
+  "curl_stderr": "",
+  "elapsed_seconds": 29.571,
+  "request_bytes": 20667754,
+  "event_count": 224,
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 212241,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 292,
+    "output_tokens_details": {
+      "reasoning_tokens": 64
+    },
+    "total_tokens": 212533
+  },
+  "error": null,
+  "classification": "completed_all_needles_found",
+  "expected_markers": [
+    "NEEDLE_ALPHA::AHAB-SEES-7429",
+    "NEEDLE_BETA::QUEEQUEG-LANTERN-1836"
+  ],
+  "found_marker_strings": [
+    "NEEDLE_ALPHA::AHAB-SEES-7429",
+    "NEEDLE_BETA::QUEEQUEG-LANTERN-1836"
+  ],
+  "output_text": "{\"ok\":true,\"found_markers\":[{\"marker\":\"NEEDLE_ALPHA::AHAB-SEES-7429\",\"surrounding_context\":\"Though not one of the oarsmen was then facing the life and death peril so close to them ahead, yet with their eyes on the intense countenance of the mate in the stern of the boat, they knew that the imminent instant had\\n\\nNEEDLE_ALPHA::AHAB-SEES-7429\\n\\ncome; they heard, too, an enormous wallowing sound as of fifty elephants stirring in their litter.\"},{\"marker\":\"NEEDLE_BETA::QUEEQUEG-LANTERN-1836\",\"surrounding_context\":\"Although,\\n\\nNEEDLE_BETA::QUEEQUEG-LANTERN-1836\\n\\nas a general case, a ship unlucky in falling in with whale continues to cruise after them until she has barely sufficient provisions remaining to take her home\"}],\"missing_markers\":[],\"notes\":\"Both embedded needle markers are visible in the provided dense text images.\"}",
+  "parsed_output": {
+    "ok": true,
+    "found_markers": [
+      {
+        "marker": "NEEDLE_ALPHA::AHAB-SEES-7429",
+        "surrounding_context": "Though not one of the oarsmen was then facing the life and death peril so close to them ahead, yet with their eyes on the intense countenance of the mate in the stern of the boat, they knew that the imminent instant had\n\nNEEDLE_ALPHA::AHAB-SEES-7429\n\ncome; they heard, too, an enormous wallowing sound as of fifty elephants stirring in their litter."
+      },
+      {
+        "marker": "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+        "surrounding_context": "Although,\n\nNEEDLE_BETA::QUEEQUEG-LANTERN-1836\n\nas a general case, a ship unlucky in falling in with whale continues to cruise after them until she has barely sufficient provisions remaining to take her home"
+      }
+    ],
+    "missing_markers": [],
+    "notes": "Both embedded needle markers are visible in the provided dense text images."
+  }
+}

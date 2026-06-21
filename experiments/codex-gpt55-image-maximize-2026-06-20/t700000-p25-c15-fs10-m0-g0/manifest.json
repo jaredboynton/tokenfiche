@@ -1,0 +1,464 @@
+{
+  "variant": "t700000-p25-c15-fs10-m0-g0",
+  "source_tokens": 700000,
+  "source_chars": 2865900,
+  "source_sha256": "f5be5c434f8d0d8f1bbfa7bb4fdfe6c909438c1d07b178cb97358bb0dfc3d2d5",
+  "source_path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t700000-p25-c15-fs10-m0-g0/source-700000-tokens.txt",
+  "sources": [
+    {
+      "name": "Moby-Dick",
+      "url": "https://www.gutenberg.org/files/2701/2701-0.txt",
+      "raw_bytes": 1234609,
+      "body_chars": 1218945,
+      "body_tokens": 305432
+    },
+    {
+      "name": "Typee",
+      "url": "https://www.gutenberg.org/files/1900/1900-0.txt",
+      "raw_bytes": 690408,
+      "body_chars": 656896,
+      "body_tokens": 152795
+    },
+    {
+      "name": "Omoo",
+      "url": "https://www.gutenberg.org/files/4045/4045-0.txt",
+      "raw_bytes": 588772,
+      "body_chars": 583810,
+      "body_tokens": 141506
+    },
+    {
+      "name": "White-Jacket",
+      "url": "https://www.gutenberg.org/files/10712/10712-0.txt",
+      "raw_bytes": 842038,
+      "body_chars": 817320,
+      "body_tokens": 201389
+    }
+  ],
+  "markers": [
+    {
+      "name": "alpha",
+      "marker": "NEEDLE_ALPHA::AHAB-SEES-7429",
+      "target_token_offset": 140000
+    },
+    {
+      "name": "beta",
+      "marker": "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+      "target_token_offset": 350000
+    },
+    {
+      "name": "gamma",
+      "marker": "NEEDLE_GAMMA::MELVILLE-SURF-9021",
+      "target_token_offset": 630000
+    }
+  ],
+  "canvas": {
+    "width": 3000,
+    "height": 3000,
+    "patches_per_image": 8836,
+    "max_dimension": 3000
+  },
+  "layout": {
+    "page_count": 25,
+    "columns": 15,
+    "font_size": 10,
+    "font_path": "/System/Library/Fonts/Supplemental/Courier New.ttf",
+    "margin": 0,
+    "gutter": 0,
+    "column_width": 200,
+    "chars_per_line": 33,
+    "line_height": 11,
+    "lines_per_col": 272,
+    "lines_per_page": 4080
+  },
+  "line_count": 101436,
+  "capacity_lines": 102000,
+  "fits_all_text": true,
+  "overflow_lines": 0,
+  "estimated_total_patches": 220900,
+  "image_count_rendered": 25,
+  "total_image_bytes": 16964561,
+  "image_metrics": [
+    {
+      "page": 1,
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t700000-p25-c15-fs10-m0-g0/page-001.png",
+      "bytes": 697362,
+      "bbox": [
+        0,
+        3,
+        2998,
+        2993
+      ],
+      "ink_width_pct": 99.93,
+      "ink_height_pct": 99.67,
+      "bbox_area_pct": 99.6
+    },
+    {
+      "page": 2,
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t700000-p25-c15-fs10-m0-g0/page-002.png",
+      "bytes": 689604,
+      "bbox": [
+        0,
+        3,
+        2998,
+        2992
+      ],
+      "ink_width_pct": 99.93,
+      "ink_height_pct": 99.63,
+      "bbox_area_pct": 99.57
+    },
+    {
+      "page": 3,
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t700000-p25-c15-fs10-m0-g0/page-003.png",
+      "bytes": 703944,
+      "bbox": [
+        0,
+        3,
+        2998,
+        2992
+      ],
+      "ink_width_pct": 99.93,
+      "ink_height_pct": 99.63,
+      "bbox_area_pct": 99.57
+    },
+    {
+      "page": 4,
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t700000-p25-c15-fs10-m0-g0/page-004.png",
+      "bytes": 699164,
+      "bbox": [
+        0,
+        3,
+        2998,
+        2992
+      ],
+      "ink_width_pct": 99.93,
+      "ink_height_pct": 99.63,
+      "bbox_area_pct": 99.57
+    },
+    {
+      "page": 5,
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t700000-p25-c15-fs10-m0-g0/page-005.png",
+      "bytes": 677572,
+      "bbox": [
+        0,
+        3,
+        2998,
+        2992
+      ],
+      "ink_width_pct": 99.93,
+      "ink_height_pct": 99.63,
+      "bbox_area_pct": 99.57
+    },
+    {
+      "page": 6,
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t700000-p25-c15-fs10-m0-g0/page-006.png",
+      "bytes": 676953,
+      "bbox": [
+        0,
+        3,
+        2998,
+        2992
+      ],
+      "ink_width_pct": 99.93,
+      "ink_height_pct": 99.63,
+      "bbox_area_pct": 99.57
+    },
+    {
+      "page": 7,
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t700000-p25-c15-fs10-m0-g0/page-007.png",
+      "bytes": 687023,
+      "bbox": [
+        0,
+        3,
+        2998,
+        2992
+      ],
+      "ink_width_pct": 99.93,
+      "ink_height_pct": 99.63,
+      "bbox_area_pct": 99.57
+    },
+    {
+      "page": 8,
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t700000-p25-c15-fs10-m0-g0/page-008.png",
+      "bytes": 680857,
+      "bbox": [
+        0,
+        3,
+        2998,
+        2992
+      ],
+      "ink_width_pct": 99.93,
+      "ink_height_pct": 99.63,
+      "bbox_area_pct": 99.57
+    },
+    {
+      "page": 9,
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t700000-p25-c15-fs10-m0-g0/page-009.png",
+      "bytes": 695238,
+      "bbox": [
+        0,
+        3,
+        2998,
+        2992
+      ],
+      "ink_width_pct": 99.93,
+      "ink_height_pct": 99.63,
+      "bbox_area_pct": 99.57
+    },
+    {
+      "page": 10,
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t700000-p25-c15-fs10-m0-g0/page-010.png",
+      "bytes": 672586,
+      "bbox": [
+        0,
+        3,
+        2998,
+        2993
+      ],
+      "ink_width_pct": 99.93,
+      "ink_height_pct": 99.67,
+      "bbox_area_pct": 99.6
+    },
+    {
+      "page": 11,
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t700000-p25-c15-fs10-m0-g0/page-011.png",
+      "bytes": 699097,
+      "bbox": [
+        0,
+        3,
+        2998,
+        2992
+      ],
+      "ink_width_pct": 99.93,
+      "ink_height_pct": 99.63,
+      "bbox_area_pct": 99.57
+    },
+    {
+      "page": 12,
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t700000-p25-c15-fs10-m0-g0/page-012.png",
+      "bytes": 672702,
+      "bbox": [
+        0,
+        3,
+        2998,
+        2992
+      ],
+      "ink_width_pct": 99.93,
+      "ink_height_pct": 99.63,
+      "bbox_area_pct": 99.57
+    },
+    {
+      "page": 13,
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t700000-p25-c15-fs10-m0-g0/page-013.png",
+      "bytes": 668123,
+      "bbox": [
+        0,
+        3,
+        2998,
+        2992
+      ],
+      "ink_width_pct": 99.93,
+      "ink_height_pct": 99.63,
+      "bbox_area_pct": 99.57
+    },
+    {
+      "page": 14,
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t700000-p25-c15-fs10-m0-g0/page-014.png",
+      "bytes": 666741,
+      "bbox": [
+        0,
+        3,
+        2998,
+        2992
+      ],
+      "ink_width_pct": 99.93,
+      "ink_height_pct": 99.63,
+      "bbox_area_pct": 99.57
+    },
+    {
+      "page": 15,
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t700000-p25-c15-fs10-m0-g0/page-015.png",
+      "bytes": 685043,
+      "bbox": [
+        0,
+        3,
+        2998,
+        2992
+      ],
+      "ink_width_pct": 99.93,
+      "ink_height_pct": 99.63,
+      "bbox_area_pct": 99.57
+    },
+    {
+      "page": 16,
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t700000-p25-c15-fs10-m0-g0/page-016.png",
+      "bytes": 668262,
+      "bbox": [
+        0,
+        3,
+        2998,
+        2992
+      ],
+      "ink_width_pct": 99.93,
+      "ink_height_pct": 99.63,
+      "bbox_area_pct": 99.57
+    },
+    {
+      "page": 17,
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t700000-p25-c15-fs10-m0-g0/page-017.png",
+      "bytes": 699244,
+      "bbox": [
+        0,
+        3,
+        2998,
+        2992
+      ],
+      "ink_width_pct": 99.93,
+      "ink_height_pct": 99.63,
+      "bbox_area_pct": 99.57
+    },
+    {
+      "page": 18,
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t700000-p25-c15-fs10-m0-g0/page-018.png",
+      "bytes": 656468,
+      "bbox": [
+        0,
+        3,
+        2998,
+        2992
+      ],
+      "ink_width_pct": 99.93,
+      "ink_height_pct": 99.63,
+      "bbox_area_pct": 99.57
+    },
+    {
+      "page": 19,
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t700000-p25-c15-fs10-m0-g0/page-019.png",
+      "bytes": 666332,
+      "bbox": [
+        0,
+        3,
+        2998,
+        2992
+      ],
+      "ink_width_pct": 99.93,
+      "ink_height_pct": 99.63,
+      "bbox_area_pct": 99.57
+    },
+    {
+      "page": 20,
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t700000-p25-c15-fs10-m0-g0/page-020.png",
+      "bytes": 658697,
+      "bbox": [
+        0,
+        3,
+        2998,
+        2992
+      ],
+      "ink_width_pct": 99.93,
+      "ink_height_pct": 99.63,
+      "bbox_area_pct": 99.57
+    },
+    {
+      "page": 21,
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t700000-p25-c15-fs10-m0-g0/page-021.png",
+      "bytes": 660078,
+      "bbox": [
+        0,
+        3,
+        2998,
+        2992
+      ],
+      "ink_width_pct": 99.93,
+      "ink_height_pct": 99.63,
+      "bbox_area_pct": 99.57
+    },
+    {
+      "page": 22,
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t700000-p25-c15-fs10-m0-g0/page-022.png",
+      "bytes": 721349,
+      "bbox": [
+        0,
+        3,
+        2998,
+        2992
+      ],
+      "ink_width_pct": 99.93,
+      "ink_height_pct": 99.63,
+      "bbox_area_pct": 99.57
+    },
+    {
+      "page": 23,
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t700000-p25-c15-fs10-m0-g0/page-023.png",
+      "bytes": 678252,
+      "bbox": [
+        0,
+        3,
+        2998,
+        2992
+      ],
+      "ink_width_pct": 99.93,
+      "ink_height_pct": 99.63,
+      "bbox_area_pct": 99.57
+    },
+    {
+      "page": 24,
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t700000-p25-c15-fs10-m0-g0/page-024.png",
+      "bytes": 675719,
+      "bbox": [
+        0,
+        3,
+        2998,
+        2992
+      ],
+      "ink_width_pct": 99.93,
+      "ink_height_pct": 99.63,
+      "bbox_area_pct": 99.57
+    },
+    {
+      "page": 25,
+      "path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t700000-p25-c15-fs10-m0-g0/page-025.png",
+      "bytes": 608151,
+      "bbox": [
+        0,
+        3,
+        2598,
+        2992
+      ],
+      "ink_width_pct": 86.6,
+      "ink_height_pct": 99.63,
+      "bbox_area_pct": 86.28
+    }
+  ],
+  "ink_width_pct_avg_rendered": 99.4,
+  "ink_width_pct_min_rendered": 86.6,
+  "marker_locations": {
+    "alpha": {
+      "marker": "NEEDLE_ALPHA::AHAB-SEES-7429",
+      "line_index": 19667,
+      "page": 5,
+      "column": 13,
+      "row": 84,
+      "line": "NEEDLE_ALPHA::AHAB-SEES-7429",
+      "crop_path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t700000-p25-c15-fs10-m0-g0/needle-alpha-crop.png"
+    },
+    "beta": {
+      "marker": "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+      "line_index": 49676,
+      "page": 13,
+      "column": 3,
+      "row": 173,
+      "line": "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+      "crop_path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t700000-p25-c15-fs10-m0-g0/needle-beta-crop.png"
+    },
+    "gamma": {
+      "marker": "NEEDLE_GAMMA::MELVILLE-SURF-9021",
+      "line_index": 91280,
+      "page": 23,
+      "column": 6,
+      "row": 161,
+      "line": "NEEDLE_GAMMA::MELVILLE-SURF-9021",
+      "crop_path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-maximize-2026-06-20/t700000-p25-c15-fs10-m0-g0/needle-gamma-crop.png"
+    }
+  },
+  "preflight_pass": true
+}

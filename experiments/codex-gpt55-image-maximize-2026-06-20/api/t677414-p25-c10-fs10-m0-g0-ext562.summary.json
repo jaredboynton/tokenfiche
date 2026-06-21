@@ -1,0 +1,67 @@
+{
+  "name": "t677414-p25-c10-fs10-m0-g0-ext562",
+  "layout_manifest": "runs/codex-gpt55-image-maximize-2026-06-20/t677414-p25-c10-fs10-m0-g0-ext562/manifest.json",
+  "source_tokens": 677414,
+  "page_count": 25,
+  "columns": 10,
+  "font_size": 10,
+  "margin": 0,
+  "gutter": 0,
+  "line_height": 11,
+  "chars_per_line": 49,
+  "line_count": 68000,
+  "capacity": 68000,
+  "ink_width_pct_avg_rendered": 99.8,
+  "ink_width_pct_min_rendered": 99.8,
+  "estimated_total_patches": 220900,
+  "http_status_line": "HTTP/2 200 ",
+  "curl_returncode": 0,
+  "elapsed_seconds": 41.695,
+  "request_bytes": 22786651,
+  "event_count": 153,
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 265263,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 279,
+    "output_tokens_details": {
+      "reasoning_tokens": 122
+    },
+    "total_tokens": 265542
+  },
+  "error": null,
+  "classification": "completed_all_needles_found",
+  "expected_markers": [
+    "NEEDLE_ALPHA::AHAB-SEES-7429",
+    "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+    "NEEDLE_GAMMA::MELVILLE-SURF-9021"
+  ],
+  "found_marker_strings": [
+    "NEEDLE_ALPHA::AHAB-SEES-7429",
+    "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+    "NEEDLE_GAMMA::MELVILLE-SURF-9021"
+  ],
+  "missing_marker_strings": [],
+  "output_text": "{\"ok\":true,\"found_markers\":[{\"marker\":\"NEEDLE_ALPHA::AHAB-SEES-7429\",\"surrounding_context\":\"NEEDLE_ALPHA::AHAB-SEES-7429\"},{\"marker\":\"NEEDLE_BETA::QUEEQUEG-LANTERN-1836\",\"surrounding_context\":\"NEEDLE_BETA::QUEEQUEG-LANTERN-1836\"},{\"marker\":\"NEEDLE_GAMMA::MELVILLE-SURF-9021\",\"surrounding_context\":\"NEEDLE_GAMMA::MELVILLE-SURF-9021\"}],\"missing_markers\":[],\"notes\":\"All three visible needle marker strings were found.\"}",
+  "parsed_output": {
+    "ok": true,
+    "found_markers": [
+      {
+        "marker": "NEEDLE_ALPHA::AHAB-SEES-7429",
+        "surrounding_context": "NEEDLE_ALPHA::AHAB-SEES-7429"
+      },
+      {
+        "marker": "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+        "surrounding_context": "NEEDLE_BETA::QUEEQUEG-LANTERN-1836"
+      },
+      {
+        "marker": "NEEDLE_GAMMA::MELVILLE-SURF-9021",
+        "surrounding_context": "NEEDLE_GAMMA::MELVILLE-SURF-9021"
+      }
+    ],
+    "missing_markers": [],
+    "notes": "All three visible needle marker strings were found."
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "target_tokens": 375000,
+  "actual_tokens": 375000,
+  "tokenizer": "o200k_base fallback",
+  "model": "gpt-5.5",
+  "payload_path": "/Users/jaredboynton/__devlocal/claudecompact-patcher/runs/codex-gpt55-image-window-probe-2026-06-20/source-375000-tokens.txt",
+  "payload_sha256": "40b41a2a342f8104e7ed64a3cbc45be9ad68d4f04db15060d08ce5ed351a05cf",
+  "payload_chars": 1517938,
+  "sources": [
+    {
+      "name": "Moby-Dick",
+      "url": "https://www.gutenberg.org/files/2701/2701-0.txt",
+      "raw_sha256": "0670d7bb10b99d05f095a28942801aa74d4921d1b34dbdc76900e2c4c2bd2189",
+      "raw_bytes": 1234609,
+      "body_chars": 1218953,
+      "body_tokens": 305442,
+      "strip_range": {
+        "start": 54,
+        "end": 1218995
+      }
+    },
+    {
+      "name": "Typee",
+      "url": "https://www.gutenberg.org/files/1900/1900-0.txt",
+      "raw_sha256": "642a8fc41c1e2ce57937202c602e184666070ba4319609816b04a396be7b08ed",
+      "raw_bytes": 690408,
+      "body_chars": 656853,
+      "body_tokens": 152803,
+      "strip_range": {
+        "start": 855,
+        "end": 669007
+      }
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "name": "t568750-p21-c11-fs10-m0-g0",
+  "layout_manifest": "runs/codex-gpt55-image-maximize-2026-06-20/t568750-p21-c11-fs10-m0-g0/manifest.json",
+  "source_tokens": 568750,
+  "page_count": 21,
+  "columns": 11,
+  "font_size": 10,
+  "margin": 0,
+  "gutter": 0,
+  "ink_width_pct_avg_rendered": 98.47,
+  "ink_width_pct_min_rendered": 72.63,
+  "estimated_total_patches": 185556,
+  "http_status_line": "HTTP/2 200 ",
+  "curl_returncode": 0,
+  "elapsed_seconds": 51.6,
+  "request_bytes": 17278212,
+  "event_count": 219,
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 222847,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 738,
+    "output_tokens_details": {
+      "reasoning_tokens": 516
+    },
+    "total_tokens": 223585
+  },
+  "error": null,
+  "classification": "completed_missing_needles",
+  "expected_markers": [
+    "NEEDLE_ALPHA::AHAB-SEES-7429",
+    "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+    "NEEDLE_GAMMA::MELVILLE-SURF-9021"
+  ],
+  "found_marker_strings": [
+    "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+    "NEEDLE_GAMMA::MELVILLE-SURF-9021"
+  ],
+  "missing_marker_strings": [
+    "NEEDLE_ALPHA::AHAB-SEES-7429"
+  ],
+  "output_text": "{\"ok\":true,\"found_markers\":[{\"marker\":\"NEEDLE_BETA::QUEEQUEG-LANTERN-1836\",\"surrounding_context\":\"...Mr. Jermin's companion-way, and was holding it there. Round and round went the spokes--the Julia... NEEDLE_BETA::QUEEQUEG-LANTERN-1836 ...were seen, suggesting beneath the piled centuries since Paradise. God! God! Couldst thou never... \"},{\"marker\":\"NEEDLE_GAMMA::MELVILLE-SURF-9021\",\"surrounding_context\":\"...Looking very demure, the men made no comments. NEEDLE_GAMMA::MELVILLE-SURF-9021 ...Those poor fellows I saw the other day--the sick, I mean--how are they?...\"}],\"missing_markers\":[\"NEEDLE_ALPHA\"],\"notes\":\"Two exact needle marker strings are clearly visible in the provided image. I did not identify a visible exact ALPHA marker string.\"}",
+  "parsed_output": {
+    "ok": true,
+    "found_markers": [
+      {
+        "marker": "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+        "surrounding_context": "...Mr. Jermin's companion-way, and was holding it there. Round and round went the spokes--the Julia... NEEDLE_BETA::QUEEQUEG-LANTERN-1836 ...were seen, suggesting beneath the piled centuries since Paradise. God! God! Couldst thou never... "
+      },
+      {
+        "marker": "NEEDLE_GAMMA::MELVILLE-SURF-9021",
+        "surrounding_context": "...Looking very demure, the men made no comments. NEEDLE_GAMMA::MELVILLE-SURF-9021 ...Those poor fellows I saw the other day--the sick, I mean--how are they?..."
+      }
+    ],
+    "missing_markers": [
+      "NEEDLE_ALPHA"
+    ],
+    "notes": "Two exact needle marker strings are clearly visible in the provided image. I did not identify a visible exact ALPHA marker string."
+  }
+}

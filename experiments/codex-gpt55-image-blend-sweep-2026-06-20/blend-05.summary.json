@@ -1,0 +1,70 @@
+{
+  "blend_image_count": 5,
+  "source_page_count": 30,
+  "pages_per_image": [
+    [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    [
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    [
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    [
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ]
+  ],
+  "http_status_line": "HTTP/2 200 ",
+  "curl_returncode": 0,
+  "curl_stderr": "",
+  "elapsed_seconds": 14.733,
+  "request_bytes": 42636379,
+  "total_image_bytes": 31975936,
+  "max_image_height": 88624,
+  "event_count": 62,
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 13926,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 205,
+    "output_tokens_details": {
+      "reasoning_tokens": 138
+    },
+    "total_tokens": 14131
+  },
+  "error": null,
+  "classification": "completed_missing_needles",
+  "found_marker_strings": [],
+  "output_text": "{\"ok\":false,\"found_markers\":[],\"missing_markers\":[],\"notes\":\"The rendered text in the provided images is too small/low-resolution to read exact marker strings reliably. No exact needle marker strings are visibly extractable without inventing them.\"}"
+}

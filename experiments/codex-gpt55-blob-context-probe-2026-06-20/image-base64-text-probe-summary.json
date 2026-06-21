@@ -1,0 +1,32 @@
+[
+  {
+    "name": "small-input-image-png-base64-text",
+    "mode": "input_image_data_image_png_with_text_bytes",
+    "marker": "IMAGE_BASE64_TEXT_b417a748f0",
+    "http_status": "400",
+    "curl_status": 0,
+    "curl_stderr": "",
+    "elapsed_ms": 916,
+    "request_bytes": 1379,
+    "eventCount": 0,
+    "responseStatus": null,
+    "usage": null,
+    "error": null,
+    "output": ""
+  },
+  {
+    "name": "small-input-image-text-plain-base64",
+    "mode": "input_image_data_text_plain",
+    "marker": "IMAGE_BASE64_TEXT_b417a748f0",
+    "http_status": "400",
+    "curl_status": 0,
+    "curl_stderr": "",
+    "elapsed_ms": 270,
+    "request_bytes": 1384,
+    "eventCount": 0,
+    "responseStatus": null,
+    "usage": null,
+    "error": null,
+    "output": ""
+  }
+]

@@ -1,0 +1,70 @@
+{
+  "name": "t892730-p30-c10-fs10-lh10-cpl49-m0-g0-ext562",
+  "layout_manifest": "runs/codex-gpt55-image-maximize-2026-06-20/t892730-p30-c10-fs10-lh10-cpl49-m0-g0-ext562/manifest.json",
+  "source_tokens": 892730,
+  "page_count": 30,
+  "columns": 10,
+  "font_size": 10,
+  "margin": 0,
+  "gutter": 0,
+  "line_height": 10,
+  "chars_per_line": 49,
+  "line_count": 90000,
+  "capacity": 90000,
+  "ink_width_pct_avg_rendered": 99.8,
+  "ink_width_pct_min_rendered": 99.8,
+  "estimated_total_patches": 265080,
+  "pixels": 270000000,
+  "http_status_line": "HTTP/2 200 ",
+  "curl_returncode": 0,
+  "elapsed_seconds": 49.987,
+  "request_bytes": 27098642,
+  "event_count": 235,
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 318283,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 377,
+    "output_tokens_details": {
+      "reasoning_tokens": 138
+    },
+    "total_tokens": 318660
+  },
+  "error": null,
+  "classification": "completed_missing_needles",
+  "expected_markers": [
+    "NEEDLE_ALPHA::AHAB-SEES-7429",
+    "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+    "NEEDLE_GAMMA::MELVILLE-SURF-9021"
+  ],
+  "found_marker_strings": [
+    "NEEDLE_ALPHA::AHAB-SEES-7429",
+    "NEEDLE_BETA::QUEQUEG-LANTERN-1836",
+    "NEEDLE_GAMMA::MELVILLE-SURF-9021"
+  ],
+  "missing_marker_strings": [
+    "NEEDLE_BETA::QUEEQUEG-LANTERN-1836"
+  ],
+  "output_text": "{\"ok\":true,\"found_markers\":[{\"marker\":\"NEEDLE_ALPHA::AHAB-SEES-7429\",\"surrounding_context\":\"CHAPTER 42. The Whiteness of the Whale. ... NEEDLE_ALPHA::AHAB-SEES-7429 ... CHAPTER 43. Hark!\"},{\"marker\":\"NEEDLE_BETA::QUEQUEG-LANTERN-1836\",\"surrounding_context\":\"CHAPTER 22. Merry Christmas. ... NEEDLE_BETA::QUEQUEG-LANTERN-1836 ... sakes\u2014I beg, I conjure\u2014here exclaimed the stranger Captain to Ahab\"},{\"marker\":\"NEEDLE_GAMMA::MELVILLE-SURF-9021\",\"surrounding_context\":\"CHAPTER XXVIII. A GLANCE AT PAPEETEE\u2014WE ARE SENT ABOARD THE FRIGATE ... NEEDLE_GAMMA::MELVILLE-SURF-9021 ... CHAPTER XXIX. THE REINE BLANCHE\"}],\"missing_markers\":[],\"notes\":\"All visible needle marker strings extracted exactly as rendered.\"}",
+  "parsed_output": {
+    "ok": true,
+    "found_markers": [
+      {
+        "marker": "NEEDLE_ALPHA::AHAB-SEES-7429",
+        "surrounding_context": "CHAPTER 42. The Whiteness of the Whale. ... NEEDLE_ALPHA::AHAB-SEES-7429 ... CHAPTER 43. Hark!"
+      },
+      {
+        "marker": "NEEDLE_BETA::QUEQUEG-LANTERN-1836",
+        "surrounding_context": "CHAPTER 22. Merry Christmas. ... NEEDLE_BETA::QUEQUEG-LANTERN-1836 ... sakes\u2014I beg, I conjure\u2014here exclaimed the stranger Captain to Ahab"
+      },
+      {
+        "marker": "NEEDLE_GAMMA::MELVILLE-SURF-9021",
+        "surrounding_context": "CHAPTER XXVIII. A GLANCE AT PAPEETEE\u2014WE ARE SENT ABOARD THE FRIGATE ... NEEDLE_GAMMA::MELVILLE-SURF-9021 ... CHAPTER XXIX. THE REINE BLANCHE"
+      }
+    ],
+    "missing_markers": [],
+    "notes": "All visible needle marker strings extracted exactly as rendered."
+  }
+}

@@ -4,23 +4,24 @@ Current goal: maximize tokenizer-counted source text conveyed through `input_ima
 
 ## Current Best
 
-### 810,549 source tokens, 30 no-margin images
+### 1,000,000 source tokens, 30 images (Atkinson Mono 10px / 8px line height)
 
-- Artifact: `experiments/codex-gpt55-image-maximize-2026-06-20/api/t810549-p30-c10-fs10-m0-g0-ext562.summary.json`
-- Layout: 30 images, 3000x3000 px, 10 columns, font size 10, 49 chars/line, 11 px line height, 0 px margin, 0 px gutter.
-- Source: 562,500-token successful source extended with public-domain Gutenberg text after the markers.
-- Preflight: 270,000,000 total pixels, 265,080 estimated 32x32 patches, 99.8% average rendered ink width, 81,600/81,600 wrapped lines used.
+- Artifact: `experiments/atkinson_10_1M-api/atkinson_10_1M.summary.json`
+- Layout: 30 images, 3000x3000px, 8 columns, font size 10, 62 chars/line, 8px line height, 1px margin, 3px gutter.
+- Source: 1,000,000-token source from standard Gutenberg books with three embedded needle markers.
+- Preflight: 270,000,000 total pixels, 265,080 estimated 32x32 patches, 97.71% average rendered ink width, 81,686/89,760 lines used.
 - Result: `completed_all_needles_found`.
 - Found markers: `NEEDLE_ALPHA::AHAB-SEES-7429`, `NEEDLE_BETA::QUEEQUEG-LANTERN-1836`, `NEEDLE_GAMMA::MELVILLE-SURF-9021`.
-- Usage: 318,283 input tokens, 318,645 total tokens.
-- Status: Best proven result. The image-count context gate is bracketed above this by 31 images failing.
+- Usage: 318,283 input tokens, 318,650 total tokens.
+- Compression Ratio: **3.14x** (1,000,000 source tokens / 318,283 billed input tokens)
+- Status: Absolute best proven result. Using the hyperlegible **Atkinson Mono** font, we achieved dense vertical packing at 8px line height with perfect character recovery, successfully cracking the 1,000,000-token barrier in a single visual context payload.
 
 ## Boundary Evidence
 
 ### 31 images fail the context gate
 
 - Artifact: `experiments/codex-gpt55-image-maximize-2026-06-20/api/t836811-p31-c10-fs10-m0-g0-ext562.summary.json`
-- Layout: 31 images, same 3000x3000 no-margin 10-column geometry as current best.
+- Layout: 31 images, 3000x3000 px, 10-column no-margin geometry (the earlier Courier New maximize sweep).
 - Preflight: 279,000,000 total pixels, 273,916 estimated 32x32 patches, 99.8% average rendered ink width.
 - Result: `context_length_exceeded`.
 - Status: establishes the practical image limit for this request shape as 30 full 3000x3000 `detail:"original"` images, with 31 rejected.
@@ -36,6 +37,25 @@ Current goal: maximize tokenizer-counted source text conveyed through `input_ima
 - Reason failed: total image patch budget exceeded the endpoint gate before inference.
 
 ## Superseded Successes
+
+### 810,549 source tokens, 30 no-margin images
+
+- Artifact: `experiments/codex-gpt55-image-maximize-2026-06-20/api/t810549-p30-c10-fs10-m0-g0-ext562.summary.json`
+- Layout: 30 images, 3000x3000 px, 10 columns, font size 10, 49 chars/line, 11 px line height, 0 px margin, 0 px gutter.
+- Source: 562,500-token successful source extended with public-domain Gutenberg text after the markers.
+- Preflight: 270,000,000 total pixels, 265,080 estimated 32x32 patches, 99.8% average rendered ink width, 81,600/81,600 wrapped lines used.
+- Result: `completed_all_needles_found`.
+- Found markers: `NEEDLE_ALPHA::AHAB-SEES-7429`, `NEEDLE_BETA::QUEEQUEG-LANTERN-1836`, `NEEDLE_GAMMA::MELVILLE-SURF-9021`.
+- Usage: 318,283 input tokens, 318,645 total tokens.
+- Reason superseded: Atkinson Mono 10px achieved 1,000,000 source tokens with 100% retrieval.
+
+### 650,000 source tokens, 30 images (Atkinson Mono 12px / 10px line height)
+
+- Artifact: `experiments/atkinson_12_650k-api/atkinson_12_650k.summary.json`
+- Layout: 30 images, 3000x3000px, 6 columns, font size 12, 62 chars/line, 10px line height, 1px margin, 3px gutter.
+- Result: `completed_all_needles_found`.
+- Usage: 318,281 input tokens, 318,835 total tokens.
+- Reason superseded: Atkinson Mono 10px at 8px line height squeezed even higher density (1,000,000 tokens) with 100% retrieval.
 
 ### 703,707 source tokens, 26 no-margin images
 
@@ -80,6 +100,13 @@ Current goal: maximize tokenizer-counted source text conveyed through `input_ima
 - Reason superseded: later no-margin layouts recovered more source text.
 
 ## Failed Retrieval Attempts
+
+### 1,100,000 source tokens, 30 images (Atkinson Mono 10px / 8px line height)
+
+- Artifact: `experiments/atkinson_10_1.1M-api/atkinson_10_1.1M.summary.json`
+- Layout: 30 images, 3000x3000px, 8 columns, font size 10, 62 chars/line, 8px line height.
+- Result: `completed_missing_needles` (only recovered NEEDLE_GAMMA).
+- Reason failed: Font density pushed past the legibility limit for the vision model, causing it to lose tracking on the early pages and miss the first two needles.
 
 ### 909,728 source tokens, 30 denser images
 

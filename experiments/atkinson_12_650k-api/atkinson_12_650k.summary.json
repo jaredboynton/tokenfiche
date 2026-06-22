@@ -1,0 +1,63 @@
+{
+  "name": "atkinson_12_650k",
+  "layout_manifest": "experiments/atkinson_12_650k/manifest.json",
+  "source_tokens": 650000,
+  "page_count": 30,
+  "columns": 6,
+  "font_size": 12,
+  "line_height": 10,
+  "chars_per_line": 62,
+  "line_count": 53357,
+  "capacity": 53820,
+  "pixels": 270000000,
+  "estimated_total_patches": 265080,
+  "http_status_line": "HTTP/1.1 200 OK",
+  "elapsed_seconds": 69.434,
+  "request_bytes": 25600068,
+  "event_count": 464,
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 318281,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 554,
+    "output_tokens_details": {
+      "reasoning_tokens": 88
+    },
+    "total_tokens": 318835
+  },
+  "error": null,
+  "classification": "completed_all_needles_found",
+  "expected_markers": [
+    "NEEDLE_ALPHA::AHAB-SEES-7429",
+    "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+    "NEEDLE_GAMMA::MELVILLE-SURF-9021"
+  ],
+  "found_marker_strings": [
+    "NEEDLE_ALPHA::AHAB-SEES-7429",
+    "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+    "NEEDLE_GAMMA::MELVILLE-SURF-9021"
+  ],
+  "missing_marker_strings": [],
+  "output_text": "{\"ok\":true,\"found_markers\":[{\"marker\":\"NEEDLE_ALPHA::AHAB-SEES-7429\",\"surrounding_context\":\"... Next morning, Stubb accosted Flask. ... CHAPTER 73. Stubb and Flask kill a Right Whale; and Then Have a Talk over Him. It must be borne in mind that all this time we had a Sperm Whale's prodigious head hanging to the Pequod's side. ... Now, during the past night and forenoon, the Pequod had gradually drifted into a sea ... NEEDLE_ALPHA::AHAB-SEES-7429 ... The gloomiest reserve, and more seldom than ever addressed his mates; In tempestuous times like these ...\"},{\"marker\":\"NEEDLE_BETA::QUEEQUEG-LANTERN-1836\",\"surrounding_context\":\"... One occupied a bunk right next to mine; and for several days had not risen from it. During this period he was often delirious, starting up and glaring around him, and sometimes wildly tossing his arms. On the night of his decease, I retired shortly after the middle watch began. NEEDLE_BETA::QUEEQUEG-LANTERN-1836 and waking from a vague dream of horrors, felt something clammy resting on me. It was the sick man's hand. ...\"},{\"marker\":\"NEEDLE_GAMMA::MELVILLE-SURF-9021\",\"surrounding_context\":\"... I could estimate, I had grown familiar with the narrow limits of my place of captivity and made such calculation that I could mark with tolerable accuracy the return of the periodical visits of the savages. Everything, in short, strengthened my suspicion with regard to the nature of the festival they were now celebrating; and which amounted almost to a certainty. While in Nukuheva I had frequently heard, that whenever ships arrived there were feasts at which terrible enormities were perpetrated. NEEDLE_GAMMA::MELVILLE-SURF-9021 ... The account. The sound of the drums continued without intermission the whole day ...\"}],\"missing_markers\":[],\"notes\":\"All three embedded needle marker strings are visible in the provided image text.\"}",
+  "parsed_output": {
+    "ok": true,
+    "found_markers": [
+      {
+        "marker": "NEEDLE_ALPHA::AHAB-SEES-7429",
+        "surrounding_context": "... Next morning, Stubb accosted Flask. ... CHAPTER 73. Stubb and Flask kill a Right Whale; and Then Have a Talk over Him. It must be borne in mind that all this time we had a Sperm Whale's prodigious head hanging to the Pequod's side. ... Now, during the past night and forenoon, the Pequod had gradually drifted into a sea ... NEEDLE_ALPHA::AHAB-SEES-7429 ... The gloomiest reserve, and more seldom than ever addressed his mates; In tempestuous times like these ..."
+      },
+      {
+        "marker": "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+        "surrounding_context": "... One occupied a bunk right next to mine; and for several days had not risen from it. During this period he was often delirious, starting up and glaring around him, and sometimes wildly tossing his arms. On the night of his decease, I retired shortly after the middle watch began. NEEDLE_BETA::QUEEQUEG-LANTERN-1836 and waking from a vague dream of horrors, felt something clammy resting on me. It was the sick man's hand. ..."
+      },
+      {
+        "marker": "NEEDLE_GAMMA::MELVILLE-SURF-9021",
+        "surrounding_context": "... I could estimate, I had grown familiar with the narrow limits of my place of captivity and made such calculation that I could mark with tolerable accuracy the return of the periodical visits of the savages. Everything, in short, strengthened my suspicion with regard to the nature of the festival they were now celebrating; and which amounted almost to a certainty. While in Nukuheva I had frequently heard, that whenever ships arrived there were feasts at which terrible enormities were perpetrated. NEEDLE_GAMMA::MELVILLE-SURF-9021 ... The account. The sound of the drums continued without intermission the whole day ..."
+      }
+    ],
+    "missing_markers": [],
+    "notes": "All three embedded needle marker strings are visible in the provided image text."
+  }
+}

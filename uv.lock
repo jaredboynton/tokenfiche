@@ -421,7 +421,7 @@ wheels = [
 ]
 
 [[package]]
-name = "token-image-compaction"
+name = "tokenfiche"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

@@ -1,0 +1,188 @@
+{
+  "single_blue_baseline": {
+    "meta": {
+      "status": "HTTP 200 OK",
+      "elapsed": 7.8,
+      "response_status": "completed",
+      "usage": {
+        "input_tokens": 8627,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 432,
+        "output_tokens_details": {
+          "reasoning_tokens": 270
+        },
+        "total_tokens": 9059
+      }
+    },
+    "blue": {
+      "truth": 8,
+      "exact": 7,
+      "near_miss": 1,
+      "exact_codes": [
+        "AX0::HNC6-RCXS-HPM8-ZP44",
+        "AX1::MT8R-BETC-VX7B-MYGB",
+        "AX3::HBDZ-JPJR-CTVE-XFFR",
+        "AX4::7EHJ-SG5Q-JETB-ZA4U",
+        "AX5::HP4X-MYGY-XS3B-RU8E",
+        "AX6::LS5X-VKSU-79FY-JV4U",
+        "AX7::AHYH-AMVQ-JFVR-8UM6"
+      ],
+      "missed": []
+    },
+    "raw": "{\"blue_codes\":[\"AX0::HNC6-RCXS-HPM8-ZP44\",\"AX3::HBDZ-JPJR-CTVE-XFFR\",\"AX6::LS5X-VKSU-79FY-JV4U\",\"AX1::MT8R-BETC-VX7B-MYGB\",\"AX4::7EHJ-SG5Q-JETB-ZA4U\",\"AX7::AHYH-AMVQ-JFVR-8UM6\",\"AX2::L8A3-5QST-HX7Y-ARLM\",\"AX5::HP4X-MYGY-XS3B-RU8E\"],\"red_codes\":[],\"notes\":\"\"}"
+  },
+  "stereo_overlay": {
+    "meta": {
+      "status": "HTTP 200 OK",
+      "elapsed": 29.8,
+      "response_status": "completed",
+      "usage": {
+        "input_tokens": 8684,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 1622,
+        "output_tokens_details": {
+          "reasoning_tokens": 1552
+        },
+        "total_tokens": 10306
+      }
+    },
+    "blue": {
+      "truth": 8,
+      "exact": 0,
+      "near_miss": 0,
+      "exact_codes": [],
+      "missed": [
+        "AX0::HNC6-RCXS-HPM8-ZP44",
+        "AX1::MT8R-BETC-VX7B-MYGB",
+        "AX2::L8A3-5QST-HXZY-ARLM",
+        "AX3::HBDZ-JPJR-CTVE-XFFR",
+        "AX4::7EHJ-SG5Q-JETB-ZA4U",
+        "AX5::HP4X-MYGY-XS3B-RU8E",
+        "AX6::LS5X-VKSU-79FY-JV4U",
+        "AX7::AHYH-AMVQ-JFVR-8UM6"
+      ]
+    },
+    "red": {
+      "truth": 8,
+      "exact": 0,
+      "near_miss": 0,
+      "exact_codes": [],
+      "missed": [
+        "BY0::BQ7W-QJRD-GZCX-C9YY",
+        "BY1::Y7WL-JAES-GYMM-674V",
+        "BY2::UP2A-VFE8-NEDU-EEUZ",
+        "BY3::WWRN-C2XH-5X4J-5TBF",
+        "BY4::EVKR-99DB-S435-RTUB",
+        "BY5::626Q-E5KP-V82J-6XKP",
+        "BY6::DT7T-EXY6-EQ99-QA7X",
+        "BY7::GZEB-QBV6-H9EN-PKVS"
+      ]
+    },
+    "raw": "{\"blue_codes\":[\"AX8::7WQ6-JROX-SZPW-89ZY\"],\"red_codes\":[\"AX6::DS5X-FXS6-ZQ99-QM7X\"],\"notes\":\"Included only codes I could read as complete formatted codes without guessing.\"}"
+  },
+  "chan_overlap": {
+    "meta": {
+      "status": "HTTP 200 OK",
+      "elapsed": 14.7,
+      "response_status": "completed",
+      "usage": {
+        "input_tokens": 8684,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 559,
+        "output_tokens_details": {
+          "reasoning_tokens": 516
+        },
+        "total_tokens": 9243
+      }
+    },
+    "blue": {
+      "truth": 8,
+      "exact": 0,
+      "near_miss": 0,
+      "exact_codes": [],
+      "missed": [
+        "AX0::HNC6-RCXS-HPM8-ZP44",
+        "AX1::MT8R-BETC-VX7B-MYGB",
+        "AX2::L8A3-5QST-HXZY-ARLM",
+        "AX3::HBDZ-JPJR-CTVE-XFFR",
+        "AX4::7EHJ-SG5Q-JETB-ZA4U",
+        "AX5::HP4X-MYGY-XS3B-RU8E",
+        "AX6::LS5X-VKSU-79FY-JV4U",
+        "AX7::AHYH-AMVQ-JFVR-8UM6"
+      ]
+    },
+    "red": {
+      "truth": 8,
+      "exact": 0,
+      "near_miss": 0,
+      "exact_codes": [],
+      "missed": [
+        "BY0::BQ7W-QJRD-GZCX-C9YY",
+        "BY1::Y7WL-JAES-GYMM-674V",
+        "BY2::UP2A-VFE8-NEDU-EEUZ",
+        "BY3::WWRN-C2XH-5X4J-5TBF",
+        "BY4::EVKR-99DB-S435-RTUB",
+        "BY5::626Q-E5KP-V82J-6XKP",
+        "BY6::DT7T-EXY6-EQ99-QA7X",
+        "BY7::GZEB-QBV6-H9EN-PKVS"
+      ]
+    },
+    "raw": "{\"blue_codes\":[],\"red_codes\":[],\"notes\":\"I could not read any complete code with sufficient confidence to transcribe it character-for-character without guessing.\"}"
+  },
+  "chan_offset": {
+    "meta": {
+      "status": "HTTP 200 OK",
+      "elapsed": 53.1,
+      "response_status": "completed",
+      "usage": {
+        "input_tokens": 8684,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens": 3279,
+        "output_tokens_details": {
+          "reasoning_tokens": 3045
+        },
+        "total_tokens": 11963
+      }
+    },
+    "blue": {
+      "truth": 8,
+      "exact": 1,
+      "near_miss": 1,
+      "exact_codes": [
+        "AX7::AHYH-AMVQ-JFVR-8UM6"
+      ],
+      "missed": [
+        "AX0::HNC6-RCXS-HPM8-ZP44",
+        "AX1::MT8R-BETC-VX7B-MYGB",
+        "AX2::L8A3-5QST-HXZY-ARLM",
+        "AX3::HBDZ-JPJR-CTVE-XFFR",
+        "AX4::7EHJ-SG5Q-JETB-ZA4U",
+        "AX5::HP4X-MYGY-XS3B-RU8E"
+      ]
+    },
+    "red": {
+      "truth": 8,
+      "exact": 1,
+      "near_miss": 2,
+      "exact_codes": [
+        "BY7::GZEB-QBV6-H9EN-PKVS"
+      ],
+      "missed": [
+        "BY0::BQ7W-QJRD-GZCX-C9YY",
+        "BY1::Y7WL-JAES-GYMM-674V",
+        "BY2::UP2A-VFE8-NEDU-EEUZ",
+        "BY3::WWRN-C2XH-5X4J-5TBF",
+        "BY4::EVKR-99DB-S435-RTUB"
+      ]
+    },
+    "raw": "{\"blue_codes\":[\"BYO::BQ7W-QJRD-GZCX-C99Y\",\"BY3::WWWN-C2XH-5X4J-5JBF\",\"AX6::L55X-VKSU-79FY-VJ4U\",\"QJC::VXTW-JAFS-GYMM-67AV\",\"BY4::FVKR-99D8-S435-RTUB\",\"AX7::AHYH-AMVQ-JFVR-8UM6\",\"BY2::UP2A-VFE8-NEDU-EEUZ\"],\"red_codes\":[\"AXQ::HNC6-RCXS-HPM8-ZP44\",\"AXS::HBDZ-JPJR-CTVF-XFFR\",\"BY6::DT7T-FXY6-FQ99-QA7X\",\"BY7::GZEB-QBV6-H9EN-PKVS\",\"BY5::626Q-E5KP-V823-6XXP\"],\"notes\":\"Only legible codes transcribed; no unreadable or uncertain codes invented.\"}"
+  }
+}

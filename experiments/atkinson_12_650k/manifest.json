@@ -1,0 +1,288 @@
+{
+  "variant": "atkinson_12_650k",
+  "source_tokens": 650000,
+  "source_sha256": "138afbb9afaf9a28df76446c7827ef9274e793d70957df2e2ad8d4e6e359f440",
+  "source_files": [
+    "examples/gutenberg-cache/Moby-Dick.txt",
+    "examples/gutenberg-cache/Omoo.txt",
+    "examples/gutenberg-cache/Typee.txt",
+    "examples/gutenberg-cache/White-Jacket.txt"
+  ],
+  "layout": {
+    "page_count": 30,
+    "columns": 6,
+    "font_size": 12,
+    "font_path": "experiments/color-layer-overlap-2026-06-20/fonts/AtkinsonMono.ttf",
+    "margin": 1,
+    "gutter": 3,
+    "image_width": 3000,
+    "image_height": 3000,
+    "column_width": 497.17,
+    "char_width": 8,
+    "chars_per_line": 62,
+    "line_height": 10,
+    "lines_per_col": 299,
+    "lines_per_page": 1794
+  },
+  "line_count": 53357,
+  "capacity": 53820,
+  "capacity_pass": true,
+  "markers_placed": true,
+  "preflight_pass": true,
+  "markers": [
+    {
+      "name": "alpha",
+      "marker": "NEEDLE_ALPHA::AHAB-SEES-7429",
+      "actual_token_offset": 130001
+    },
+    {
+      "name": "beta",
+      "marker": "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+      "actual_token_offset": 325014
+    },
+    {
+      "name": "gamma",
+      "marker": "NEEDLE_GAMMA::MELVILLE-SURF-9021",
+      "actual_token_offset": 585032
+    }
+  ],
+  "marker_positions": {
+    "alpha": {
+      "page": 6,
+      "column": 5,
+      "row": 213,
+      "line": "NEEDLE_ALPHA::AHAB-SEES-7429"
+    },
+    "beta": {
+      "page": 15,
+      "column": 3,
+      "row": 232,
+      "line": "NEEDLE_BETA::QUEEQUEG-LANTERN-1836"
+    },
+    "gamma": {
+      "page": 27,
+      "column": 5,
+      "row": 204,
+      "line": "NEEDLE_GAMMA::MELVILLE-SURF-9021"
+    }
+  },
+  "estimated_total_patches": 265080,
+  "pixels": 270000000,
+  "ink_width_pct_avg_rendered": 99.35,
+  "ink_width_pct_min_rendered": 83.27,
+  "ink_width_pct_by_page": [
+    99.9,
+    99.9,
+    99.9,
+    99.93,
+    99.9,
+    99.9,
+    99.9,
+    99.9,
+    99.93,
+    99.9,
+    99.9,
+    99.9,
+    99.93,
+    99.9,
+    99.9,
+    99.9,
+    99.9,
+    99.9,
+    99.9,
+    99.9,
+    99.9,
+    99.9,
+    99.9,
+    99.9,
+    99.9,
+    99.9,
+    99.9,
+    99.9,
+    99.93,
+    83.27
+  ],
+  "ink_bboxes": [
+    [
+      1,
+      4,
+      2998,
+      2995
+    ],
+    [
+      1,
+      4,
+      2998,
+      2995
+    ],
+    [
+      1,
+      4,
+      2998,
+      2995
+    ],
+    [
+      0,
+      4,
+      2998,
+      2995
+    ],
+    [
+      1,
+      4,
+      2998,
+      2995
+    ],
+    [
+      1,
+      4,
+      2998,
+      2995
+    ],
+    [
+      1,
+      4,
+      2998,
+      2995
+    ],
+    [
+      1,
+      4,
+      2998,
+      2995
+    ],
+    [
+      0,
+      4,
+      2998,
+      2995
+    ],
+    [
+      1,
+      4,
+      2998,
+      2995
+    ],
+    [
+      1,
+      4,
+      2998,
+      2995
+    ],
+    [
+      1,
+      4,
+      2998,
+      2995
+    ],
+    [
+      0,
+      4,
+      2998,
+      2995
+    ],
+    [
+      1,
+      4,
+      2998,
+      2995
+    ],
+    [
+      1,
+      4,
+      2998,
+      2995
+    ],
+    [
+      1,
+      4,
+      2998,
+      2995
+    ],
+    [
+      1,
+      4,
+      2998,
+      2995
+    ],
+    [
+      1,
+      4,
+      2998,
+      2995
+    ],
+    [
+      1,
+      4,
+      2998,
+      2995
+    ],
+    [
+      1,
+      4,
+      2998,
+      2995
+    ],
+    [
+      1,
+      4,
+      2998,
+      2995
+    ],
+    [
+      1,
+      4,
+      2998,
+      2995
+    ],
+    [
+      1,
+      4,
+      2998,
+      2995
+    ],
+    [
+      1,
+      4,
+      2998,
+      2995
+    ],
+    [
+      1,
+      4,
+      2998,
+      2995
+    ],
+    [
+      1,
+      4,
+      2998,
+      2995
+    ],
+    [
+      1,
+      4,
+      2998,
+      2995
+    ],
+    [
+      1,
+      4,
+      2998,
+      2995
+    ],
+    [
+      0,
+      4,
+      2998,
+      2995
+    ],
+    [
+      0,
+      4,
+      2498,
+      2995
+    ]
+  ],
+  "total_image_bytes": 19197262
+}

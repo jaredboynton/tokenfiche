@@ -1,0 +1,63 @@
+{
+  "name": "atkinson_10_1M",
+  "layout_manifest": "experiments/atkinson_10_1M/manifest.json",
+  "source_tokens": 1000000,
+  "page_count": 30,
+  "columns": 8,
+  "font_size": 10,
+  "line_height": 8,
+  "chars_per_line": 62,
+  "line_count": 81686,
+  "capacity": 89760,
+  "pixels": 270000000,
+  "estimated_total_patches": 265080,
+  "http_status_line": "HTTP/1.1 200 OK",
+  "elapsed_seconds": 78.698,
+  "request_bytes": 33627756,
+  "event_count": 245,
+  "response_status": "completed",
+  "usage": {
+    "input_tokens": 318283,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 367,
+    "output_tokens_details": {
+      "reasoning_tokens": 121
+    },
+    "total_tokens": 318650
+  },
+  "error": null,
+  "classification": "completed_all_needles_found",
+  "expected_markers": [
+    "NEEDLE_ALPHA::AHAB-SEES-7429",
+    "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+    "NEEDLE_GAMMA::MELVILLE-SURF-9021"
+  ],
+  "found_marker_strings": [
+    "NEEDLE_ALPHA::AHAB-SEES-7429",
+    "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+    "NEEDLE_GAMMA::MELVILLE-SURF-9021"
+  ],
+  "missing_marker_strings": [],
+  "output_text": "{\"ok\":true,\"found_markers\":[{\"marker\":\"NEEDLE_ALPHA::AHAB-SEES-7429\",\"surrounding_context\":\"...quiet splash of a whale in the immediate vicinity of the Pequod. \\\"I have it now,\\\" cried he; \\\"there's the very thing.\\\" NEEDLE_ALPHA::AHAB-SEES-7429 The Pequod's boats were lowered...\"},{\"marker\":\"NEEDLE_BETA::QUEEQUEG-LANTERN-1836\",\"surrounding_context\":\"...was a tacit look, signs of some curiosity seemed hinted in all this; but we made no advances... NEEDLE_BETA::QUEEQUEG-LANTERN-1836 The continued quiet... \"},{\"marker\":\"NEEDLE_GAMMA::MELVILLE-SURF-9021\",\"surrounding_context\":\"...old Manx sailor... \\\"No need of that,\\\" said the captain... NEEDLE_GAMMA::MELVILLE-SURF-9021 \\\"For God's sake, run for the doctor...\"}],\"missing_markers\":[],\"notes\":\"All visible needle marker strings extracted exactly as rendered.\"}",
+  "parsed_output": {
+    "ok": true,
+    "found_markers": [
+      {
+        "marker": "NEEDLE_ALPHA::AHAB-SEES-7429",
+        "surrounding_context": "...quiet splash of a whale in the immediate vicinity of the Pequod. \"I have it now,\" cried he; \"there's the very thing.\" NEEDLE_ALPHA::AHAB-SEES-7429 The Pequod's boats were lowered..."
+      },
+      {
+        "marker": "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+        "surrounding_context": "...was a tacit look, signs of some curiosity seemed hinted in all this; but we made no advances... NEEDLE_BETA::QUEEQUEG-LANTERN-1836 The continued quiet... "
+      },
+      {
+        "marker": "NEEDLE_GAMMA::MELVILLE-SURF-9021",
+        "surrounding_context": "...old Manx sailor... \"No need of that,\" said the captain... NEEDLE_GAMMA::MELVILLE-SURF-9021 \"For God's sake, run for the doctor..."
+      }
+    ],
+    "missing_markers": [],
+    "notes": "All visible needle marker strings extracted exactly as rendered."
+  }
+}

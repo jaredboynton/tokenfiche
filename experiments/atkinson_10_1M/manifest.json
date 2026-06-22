@@ -1,0 +1,276 @@
+{
+  "variant": "atkinson_10_1M",
+  "source_tokens": 1000000,
+  "source_sha256": "4140a2273d69731d3098ac57ea78a955065cdd5970bb2029b177f47563c963fa",
+  "source_files": [
+    "examples/gutenberg-cache/Moby-Dick.txt",
+    "examples/gutenberg-cache/Omoo.txt",
+    "examples/gutenberg-cache/Typee.txt",
+    "examples/gutenberg-cache/White-Jacket.txt"
+  ],
+  "layout": {
+    "page_count": 30,
+    "columns": 8,
+    "font_size": 10,
+    "font_path": "experiments/color-layer-overlap-2026-06-20/fonts/AtkinsonMono.ttf",
+    "margin": 1,
+    "gutter": 3,
+    "image_width": 3000,
+    "image_height": 3000,
+    "column_width": 372.12,
+    "char_width": 6,
+    "chars_per_line": 62,
+    "line_height": 8,
+    "lines_per_col": 374,
+    "lines_per_page": 2992
+  },
+  "line_count": 81686,
+  "capacity": 89760,
+  "capacity_pass": true,
+  "markers_placed": true,
+  "preflight_pass": true,
+  "markers": [
+    {
+      "name": "alpha",
+      "marker": "NEEDLE_ALPHA::AHAB-SEES-7429",
+      "actual_token_offset": 200001
+    },
+    {
+      "name": "beta",
+      "marker": "NEEDLE_BETA::QUEEQUEG-LANTERN-1836",
+      "actual_token_offset": 500015
+    },
+    {
+      "name": "gamma",
+      "marker": "NEEDLE_GAMMA::MELVILLE-SURF-9021",
+      "actual_token_offset": 900033
+    }
+  ],
+  "marker_positions": {
+    "alpha": {
+      "page": 6,
+      "column": 3,
+      "row": 233,
+      "line": "NEEDLE_ALPHA::AHAB-SEES-7429"
+    },
+    "beta": {
+      "page": 14,
+      "column": 6,
+      "row": 260,
+      "line": "NEEDLE_BETA::QUEEQUEG-LANTERN-1836"
+    },
+    "gamma": {
+      "page": 25,
+      "column": 6,
+      "row": 60,
+      "line": "NEEDLE_GAMMA::MELVILLE-SURF-9021"
+    }
+  },
+  "estimated_total_patches": 265080,
+  "pixels": 270000000,
+  "ink_width_pct_avg_rendered": 97.71,
+  "ink_width_pct_min_rendered": 37.4,
+  "ink_width_pct_by_page": [
+    99.97,
+    99.93,
+    99.93,
+    99.93,
+    99.93,
+    99.97,
+    99.93,
+    99.93,
+    99.93,
+    99.93,
+    99.93,
+    99.93,
+    99.93,
+    99.93,
+    99.93,
+    99.93,
+    99.93,
+    99.97,
+    99.97,
+    99.97,
+    99.97,
+    99.97,
+    99.97,
+    99.93,
+    99.97,
+    99.93,
+    99.97,
+    37.4
+  ],
+  "ink_bboxes": [
+    [
+      0,
+      4,
+      2999,
+      2997
+    ],
+    [
+      1,
+      4,
+      2999,
+      2997
+    ],
+    [
+      1,
+      4,
+      2999,
+      2997
+    ],
+    [
+      1,
+      4,
+      2999,
+      2997
+    ],
+    [
+      1,
+      4,
+      2999,
+      2997
+    ],
+    [
+      0,
+      4,
+      2999,
+      2997
+    ],
+    [
+      1,
+      4,
+      2999,
+      2997
+    ],
+    [
+      1,
+      4,
+      2999,
+      2997
+    ],
+    [
+      1,
+      4,
+      2999,
+      2997
+    ],
+    [
+      1,
+      4,
+      2999,
+      2997
+    ],
+    [
+      1,
+      4,
+      2999,
+      2997
+    ],
+    [
+      1,
+      4,
+      2999,
+      2997
+    ],
+    [
+      1,
+      4,
+      2999,
+      2997
+    ],
+    [
+      1,
+      4,
+      2999,
+      2997
+    ],
+    [
+      1,
+      4,
+      2999,
+      2997
+    ],
+    [
+      1,
+      4,
+      2999,
+      2997
+    ],
+    [
+      1,
+      4,
+      2999,
+      2997
+    ],
+    [
+      0,
+      4,
+      2999,
+      2997
+    ],
+    [
+      0,
+      4,
+      2999,
+      2997
+    ],
+    [
+      0,
+      4,
+      2999,
+      2997
+    ],
+    [
+      0,
+      4,
+      2999,
+      2997
+    ],
+    [
+      0,
+      4,
+      2999,
+      2997
+    ],
+    [
+      0,
+      4,
+      2999,
+      2997
+    ],
+    [
+      1,
+      4,
+      2999,
+      2997
+    ],
+    [
+      0,
+      4,
+      2999,
+      2997
+    ],
+    [
+      1,
+      4,
+      2999,
+      2997
+    ],
+    [
+      0,
+      4,
+      2999,
+      2997
+    ],
+    [
+      1,
+      4,
+      1123,
+      2997
+    ],
+    null,
+    null
+  ],
+  "total_image_bytes": 25218027
+}
